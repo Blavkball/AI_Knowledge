@@ -126,8 +126,21 @@
       "why": "connects across different repos/directories"
     }
   ],
-  "tokens": {
-    "input": 3252,
-    "output": 1524
-  }
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Human Readable Name` connect `Human Readable Name` to `Human Readable Name`?",
+      "why": "High betweenness centrality (0.722) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Human Readable Name` connect `Human Readable Name` to `Human Readable Name`?",
+      "why": "High betweenness centrality (0.222) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Human Readable Name`, `Human Readable Name`, `Human Readable Name` to the rest of the system?",
+      "why": "7 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
 }

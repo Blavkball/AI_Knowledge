@@ -10,9 +10,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "src_auth_session",
       "community": 0,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "src_auth_session",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -21,9 +22,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "src_auth_employee",
       "community": 0,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "src_auth_employee",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -32,9 +34,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "src_auth_task",
       "community": 0,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "src_auth_task",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -43,9 +46,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "src_architecture",
       "community": 0,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "src_architecture",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -54,9 +58,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "omniforces",
       "community": 0,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "omniforces",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -65,9 +70,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "blackball",
       "community": 1,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "blackball",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -76,9 +82,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_knowledge",
       "community": 2,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "ai_knowledge",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -87,9 +94,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "standards_document_header",
       "community": 2,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "standards_document_header",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -98,9 +106,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "repository_layout",
       "community": 1,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "repository_layout",
+      "community_name": "Human Readable Name"
     },
     {
       "label": "Human Readable Name",
@@ -109,9 +118,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "git_branching",
       "community": 1,
-      "norm_label": "human readable name"
+      "norm_label": "human readable name",
+      "id": "git_branching",
+      "community_name": "Human Readable Name"
     }
   ],
   "links": [

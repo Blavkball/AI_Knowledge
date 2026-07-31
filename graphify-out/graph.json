@@ -1,91 +1,141 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {},
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "engineering_ecosystem",
+        "label": "Engineering Ecosystem",
+        "nodes": [
+          "repositories_ai_knowledge",
+          "repositories_ai_workstation",
+          "repositories_omniforces",
+          "repositories_blackball"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "repositories"
+      },
+      {
+        "id": "kces_principles_group",
+        "label": "Engineering Principles (KCES) Group",
+        "nodes": [
+          "standards_standards_document",
+          "kces_principles"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "standards/STANDARDS.md"
+      },
+      {
+        "id": "repository_standards_group",
+        "label": "Repository Standards Group",
+        "nodes": [
+          "standards_standards_document",
+          "repository_standards"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "standards/STANDARDS.md"
+      },
+      {
+        "id": "documentation_standards_group",
+        "label": "Documentation Standards Group",
+        "nodes": [
+          "standards_standards_document",
+          "documentation_standards"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "standards/STANDARDS.md"
+      },
+      {
+        "id": "git_standards_group",
+        "label": "Git Standards Group",
+        "nodes": [
+          "standards_standards_document",
+          "git_standards"
+        ],
+        "relation": "conceptually_related_to",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "standards/STANDARDS.md"
+      },
+      {
+        "id": "participate_in",
+        "label": "",
+        "nodes": [
+          "src_auth_session"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "source_file": "tasks/TASK_LIFECYCLE.md",
+        "source_location": null
+      },
+      {
+        "id": "participate_in",
+        "label": "",
+        "nodes": [
+          "src_auth_session"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "source_file": "tasks/TASK_STATES.md",
+        "source_location": null
+      },
+      {
+        "id": "conceptually_related_to",
+        "label": "",
+        "nodes": [
+          "src_auth_session"
+        ],
+        "relation": "conceptually_related_to",
+        "confidence": "EXTRACTED",
+        "source_file": "tasks/TASK_TEMPLATE.md",
+        "source_location": null
+      }
+    ]
+  },
   "nodes": [
     {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "src/auth/session.py",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "human readable name",
-      "id": "src_auth_session",
-      "community_name": "Human Readable Name"
-    },
-    {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "src/auth/employee.py",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "human readable name",
-      "id": "src_auth_employee",
-      "community_name": "Human Readable Name"
-    },
-    {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "src/auth/task.py",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "human readable name",
-      "id": "src_auth_task",
-      "community_name": "Human Readable Name"
-    },
-    {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "src/architecture.py",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "human readable name",
-      "id": "src_architecture",
-      "community_name": "Human Readable Name"
-    },
-    {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "omniforces.py",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "human readable name",
-      "id": "omniforces",
-      "community_name": "Human Readable Name"
-    },
-    {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "blackball.py",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "human readable name",
-      "id": "blackball",
-      "community_name": "Human Readable Name"
-    },
-    {
-      "label": "Human Readable Name",
+      "label": "OmniForces",
       "file_type": "document",
-      "source_file": "GLOBAL_KNOWLEDGE.md",
+      "source_file": "repositories/OmniForces.md",
+      "source_location": null,
       "captured_at": null,
       "author": null,
+      "contributor": "KingC Software",
+      "id": "repositories_omniforces",
+      "community": 1,
+      "norm_label": "omniforces"
+    },
+    {
+      "label": "BlackBall",
+      "file_type": "document",
+      "source_file": "repositories/BlackBall.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": "KingC Software",
+      "id": "repositories_blackball",
+      "community": 1,
+      "norm_label": "blackball"
+    },
+    {
+      "label": "AI Knowledge",
+      "file_type": "document",
+      "source_file": "repositories/AI_Knowledge.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": "KingC Software",
       "contributor": null,
-      "community": 2,
-      "norm_label": "human readable name",
-      "id": "ai_knowledge",
-      "community_name": "Human Readable Name"
+      "id": "repositories_ai_knowledge",
+      "community": 1,
+      "norm_label": "ai knowledge"
     },
     {
       "label": "Human Readable Name",
@@ -94,10 +144,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "human readable name",
-      "id": "standards_document_header",
-      "community_name": "Human Readable Name"
+      "community_name": "Human Readable Name",
+      "id": "standards_document_header"
     },
     {
       "label": "Human Readable Name",
@@ -106,84 +156,188 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "human readable name",
-      "id": "repository_layout",
-      "community_name": "Human Readable Name"
+      "community_name": "Human Readable Name",
+      "id": "repository_layout"
     },
     {
-      "label": "Human Readable Name",
+      "label": "AI Workstation",
+      "file_type": "document",
+      "source_file": "repositories/AI_Workstation.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": "KingC Software",
+      "id": "repositories_ai_workstation",
+      "community": 1,
+      "norm_label": "ai workstation"
+    },
+    {
+      "label": "KingC Engineering Standard",
+      "file_type": "document",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": "KingC Software",
+      "contributor": null,
+      "id": "standards_standards_document",
+      "community": 2,
+      "norm_label": "kingc engineering standard"
+    },
+    {
+      "label": "Engineering Principles (KCES)",
       "file_type": "rationale",
-      "source_file": "None",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "norm_label": "human readable name",
-      "id": "git_branching",
-      "community_name": "Human Readable Name"
+      "id": "kces_principles",
+      "community": 2,
+      "norm_label": "engineering principles (kces)"
+    },
+    {
+      "label": "Repository Standards",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repository_standards",
+      "community": 2,
+      "norm_label": "repository standards"
+    },
+    {
+      "label": "Documentation Standards",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "documentation_standards",
+      "community": 2,
+      "norm_label": "documentation standards"
+    },
+    {
+      "label": "Standard Document Header",
+      "file_type": "document",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": "KingC Software",
+      "contributor": null,
+      "id": "standard_document_header",
+      "community": 0,
+      "norm_label": "standard document header"
+    },
+    {
+      "label": "Naming Standards",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "naming_standards",
+      "community": 0,
+      "norm_label": "naming standards"
+    },
+    {
+      "label": "Folder Standards",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "folder_standards",
+      "community": 0,
+      "norm_label": "folder standards"
+    },
+    {
+      "label": "Graphify Standards",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify_standards",
+      "community": 0,
+      "norm_label": "graphify standards"
+    },
+    {
+      "label": "Git Standards",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "git_standards",
+      "community": 0,
+      "norm_label": "git standards"
+    },
+    {
+      "label": "AI Employee Rules",
+      "file_type": "rationale",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_employee_rules",
+      "community": 0,
+      "norm_label": "ai employee rules"
+    },
+    {
+      "label": "Revision History",
+      "file_type": "concept",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "revision_history",
+      "community": 0,
+      "norm_label": "revision history"
     }
   ],
   "links": [
     {
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/auth/session.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "src_auth_session",
-      "target": "omniforces"
+      "source_file": "repositories/AI_Workstation.md",
+      "source": "repositories_ai_workstation",
+      "target": "repositories_omniforces"
     },
     {
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/auth/employee.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "src_auth_employee",
-      "target": "omniforces"
+      "source_file": "repositories/OmniForces.md",
+      "source": "repositories_omniforces",
+      "target": "repositories_blackball"
     },
     {
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "provides",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/auth/task.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "src_auth_task",
-      "target": "omniforces"
+      "source_file": "repositories/AI_Knowledge.md",
+      "source": "repositories_ai_knowledge",
+      "target": "repositories_blackball"
     },
     {
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/architecture.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "src_architecture",
-      "target": "omniforces"
-    },
-    {
-      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "confidence_score": 1.0,
-      "source_file": "omniforces.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "omniforces",
-      "target": "git_branching"
-    },
-    {
-      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "confidence_score": 1.0,
-      "source_file": "blackball.py",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "blackball",
-      "target": "git_branching"
+      "source_file": "repositories/AI_Knowledge.md",
+      "source": "repositories_ai_knowledge",
+      "target": "repositories_ai_workstation"
     },
     {
       "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
@@ -192,30 +346,194 @@
       "source_file": "GLOBAL_KNOWLEDGE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_knowledge",
+      "source": "repositories_ai_knowledge",
       "target": "standards_document_header"
     },
     {
-      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "STANDARDS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "standards_document_header",
-      "target": "git_branching"
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_standards_document",
+      "target": "documentation_standards"
     },
     {
-      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "REPOSITORIES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "repository_layout",
-      "target": "git_branching"
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_standards_document",
+      "target": "kces_principles"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_standards_document",
+      "target": "repository_standards"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standard_document_header",
+      "target": "folder_standards"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standard_document_header",
+      "target": "git_standards"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standard_document_header",
+      "target": "graphify_standards"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standard_document_header",
+      "target": "naming_standards"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "naming_standards",
+      "target": "ai_employee_rules"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "standards/STANDARDS.md",
+      "source": "folder_standards",
+      "target": "ai_employee_rules"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "graphify_standards",
+      "target": "revision_history"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "standards/STANDARDS.md",
+      "source": "git_standards",
+      "target": "revision_history"
     }
   ],
-  "hyperedges": [],
-  "built_at_commit": "87469a35178396b8fb7aa91aa7bdc5d5257aca8b"
+  "hyperedges": [
+    {
+      "id": "engineering_ecosystem",
+      "label": "Engineering Ecosystem",
+      "nodes": [
+        "repositories_ai_knowledge",
+        "repositories_ai_workstation",
+        "repositories_omniforces",
+        "repositories_blackball"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "repositories"
+    },
+    {
+      "id": "kces_principles_group",
+      "label": "Engineering Principles (KCES) Group",
+      "nodes": [
+        "standards_standards_document",
+        "kces_principles"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md"
+    },
+    {
+      "id": "repository_standards_group",
+      "label": "Repository Standards Group",
+      "nodes": [
+        "standards_standards_document",
+        "repository_standards"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md"
+    },
+    {
+      "id": "documentation_standards_group",
+      "label": "Documentation Standards Group",
+      "nodes": [
+        "standards_standards_document",
+        "documentation_standards"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md"
+    },
+    {
+      "id": "git_standards_group",
+      "label": "Git Standards Group",
+      "nodes": [
+        "standards_standards_document",
+        "git_standards"
+      ],
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "standards/STANDARDS.md"
+    },
+    {
+      "id": "participate_in",
+      "label": "",
+      "nodes": [
+        "src_auth_session"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "source_file": "tasks/TASK_LIFECYCLE.md",
+      "source_location": null
+    },
+    {
+      "id": "participate_in",
+      "label": "",
+      "nodes": [
+        "src_auth_session"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "source_file": "tasks/TASK_STATES.md",
+      "source_location": null
+    },
+    {
+      "id": "conceptually_related_to",
+      "label": "",
+      "nodes": [
+        "src_auth_session"
+      ],
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "source_file": "tasks/TASK_TEMPLATE.md",
+      "source_location": null
+    }
+  ],
+  "built_at_commit": "98553e7dcef86912a225a76ff7e5139e1b4f0fab"
 }

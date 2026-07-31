@@ -1,146 +1,148 @@
 {
   "communities": {
     "0": [
-      "omniforces",
-      "src_architecture",
-      "src_auth_employee",
-      "src_auth_session",
-      "src_auth_task"
+      "ai_employee_rules",
+      "folder_standards",
+      "git_standards",
+      "graphify_standards",
+      "naming_standards",
+      "revision_history",
+      "standard_document_header"
     ],
     "1": [
-      "blackball",
-      "git_branching",
-      "repository_layout"
+      "repositories_ai_knowledge",
+      "repositories_ai_workstation",
+      "repositories_blackball",
+      "repositories_omniforces",
+      "standards_document_header"
     ],
     "2": [
-      "ai_knowledge",
-      "standards_document_header"
+      "documentation_standards",
+      "kces_principles",
+      "repository_standards",
+      "standards_standards_document"
+    ],
+    "3": [
+      "repository_layout"
     ]
   },
   "cohesion": {
-    "0": 0.4,
-    "1": 0.6666666666666666,
-    "2": 1.0
+    "0": 0.38095238095238093,
+    "1": 0.5,
+    "2": 0.5,
+    "3": 1.0
   },
   "gods": [
     {
-      "id": "omniforces",
-      "label": "Human Readable Name",
-      "degree": 5
+      "id": "standard_document_header",
+      "label": "Standard Document Header",
+      "degree": 4
     },
     {
-      "id": "standards_document_header",
-      "label": "Human Readable Name",
+      "id": "repositories_ai_knowledge",
+      "label": "AI Knowledge",
+      "degree": 3
+    },
+    {
+      "id": "standards_standards_document",
+      "label": "KingC Engineering Standard",
+      "degree": 3
+    },
+    {
+      "id": "repositories_omniforces",
+      "label": "OmniForces",
       "degree": 2
     },
     {
-      "id": "src_auth_session",
-      "label": "Human Readable Name",
-      "degree": 1
+      "id": "repositories_blackball",
+      "label": "BlackBall",
+      "degree": 2
     },
     {
-      "id": "src_auth_employee",
-      "label": "Human Readable Name",
-      "degree": 1
+      "id": "repositories_ai_workstation",
+      "label": "AI Workstation",
+      "degree": 2
     },
     {
-      "id": "src_auth_task",
-      "label": "Human Readable Name",
-      "degree": 1
+      "id": "naming_standards",
+      "label": "Naming Standards",
+      "degree": 2
     },
     {
-      "id": "src_architecture",
-      "label": "Human Readable Name",
-      "degree": 1
+      "id": "folder_standards",
+      "label": "Folder Standards",
+      "degree": 2
     },
     {
-      "id": "blackball",
-      "label": "Human Readable Name",
-      "degree": 1
+      "id": "graphify_standards",
+      "label": "Graphify Standards",
+      "degree": 2
     },
     {
-      "id": "ai_knowledge",
-      "label": "Human Readable Name",
-      "degree": 1
-    },
-    {
-      "id": "repository_layout",
-      "label": "Human Readable Name",
-      "degree": 1
+      "id": "git_standards",
+      "label": "Git Standards",
+      "degree": 2
     }
   ],
   "surprises": [
     {
-      "source": "Human Readable Name",
+      "source": "AI Knowledge",
       "target": "Human Readable Name",
       "source_files": [
-        "src/auth/session.py",
-        "omniforces.py"
-      ],
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
-    },
-    {
-      "source": "Human Readable Name",
-      "target": "Human Readable Name",
-      "source_files": [
-        "src/auth/employee.py",
-        "omniforces.py"
-      ],
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
-    },
-    {
-      "source": "Human Readable Name",
-      "target": "Human Readable Name",
-      "source_files": [
-        "src/auth/task.py",
-        "omniforces.py"
-      ],
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
-    },
-    {
-      "source": "Human Readable Name",
-      "target": "Human Readable Name",
-      "source_files": [
-        "src/architecture.py",
-        "omniforces.py"
-      ],
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
-    },
-    {
-      "source": "Human Readable Name",
-      "target": "Human Readable Name",
-      "source_files": [
-        "GLOBAL_KNOWLEDGE.md",
+        "repositories/AI_Knowledge.md",
         "STANDARDS.md"
       ],
       "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
       "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
       "why": "connects across different repos/directories"
+    },
+    {
+      "source": "AI Workstation",
+      "target": "OmniForces",
+      "source_files": [
+        "repositories/AI_Workstation.md",
+        "repositories/OmniForces.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "OmniForces",
+      "target": "BlackBall",
+      "source_files": [
+        "repositories/OmniForces.md",
+        "repositories/BlackBall.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "AI Knowledge",
+      "target": "BlackBall",
+      "source_files": [
+        "repositories/AI_Knowledge.md",
+        "repositories/BlackBall.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "provides",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "AI Knowledge",
+      "target": "AI Workstation",
+      "source_files": [
+        "repositories/AI_Knowledge.md",
+        "repositories/AI_Workstation.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
     }
   ],
-  "questions": [
-    {
-      "type": "bridge_node",
-      "question": "Why does `Human Readable Name` connect `Human Readable Name` to `Human Readable Name`?",
-      "why": "High betweenness centrality (0.722) - this node is a cross-community bridge."
-    },
-    {
-      "type": "bridge_node",
-      "question": "Why does `Human Readable Name` connect `Human Readable Name` to `Human Readable Name`?",
-      "why": "High betweenness centrality (0.222) - this node is a cross-community bridge."
-    },
-    {
-      "type": "isolated_nodes",
-      "question": "What connects `Human Readable Name`, `Human Readable Name`, `Human Readable Name` to the rest of the system?",
-      "why": "7 weakly-connected nodes found - possible documentation gaps or missing edges."
-    }
-  ]
+  "tokens": {
+    "input": 5336,
+    "output": 2224
+  }
 }
