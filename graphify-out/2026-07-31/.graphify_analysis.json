@@ -1,0 +1,133 @@
+{
+  "communities": {
+    "0": [
+      "omniforces",
+      "src_architecture",
+      "src_auth_employee",
+      "src_auth_session",
+      "src_auth_task"
+    ],
+    "1": [
+      "blackball",
+      "git_branching",
+      "repository_layout"
+    ],
+    "2": [
+      "ai_knowledge",
+      "standards_document_header"
+    ]
+  },
+  "cohesion": {
+    "0": 0.4,
+    "1": 0.6666666666666666,
+    "2": 1.0
+  },
+  "gods": [
+    {
+      "id": "omniforces",
+      "label": "Human Readable Name",
+      "degree": 5
+    },
+    {
+      "id": "standards_document_header",
+      "label": "Human Readable Name",
+      "degree": 2
+    },
+    {
+      "id": "src_auth_session",
+      "label": "Human Readable Name",
+      "degree": 1
+    },
+    {
+      "id": "src_auth_employee",
+      "label": "Human Readable Name",
+      "degree": 1
+    },
+    {
+      "id": "src_auth_task",
+      "label": "Human Readable Name",
+      "degree": 1
+    },
+    {
+      "id": "src_architecture",
+      "label": "Human Readable Name",
+      "degree": 1
+    },
+    {
+      "id": "blackball",
+      "label": "Human Readable Name",
+      "degree": 1
+    },
+    {
+      "id": "ai_knowledge",
+      "label": "Human Readable Name",
+      "degree": 1
+    },
+    {
+      "id": "repository_layout",
+      "label": "Human Readable Name",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Human Readable Name",
+      "target": "Human Readable Name",
+      "source_files": [
+        "src/auth/session.py",
+        "omniforces.py"
+      ],
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
+    },
+    {
+      "source": "Human Readable Name",
+      "target": "Human Readable Name",
+      "source_files": [
+        "src/auth/employee.py",
+        "omniforces.py"
+      ],
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
+    },
+    {
+      "source": "Human Readable Name",
+      "target": "Human Readable Name",
+      "source_files": [
+        "src/auth/task.py",
+        "omniforces.py"
+      ],
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
+    },
+    {
+      "source": "Human Readable Name",
+      "target": "Human Readable Name",
+      "source_files": [
+        "src/architecture.py",
+        "omniforces.py"
+      ],
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "why": "connects across different repos/directories; peripheral node `Human Readable Name` unexpectedly reaches hub `Human Readable Name`"
+    },
+    {
+      "source": "Human Readable Name",
+      "target": "Human Readable Name",
+      "source_files": [
+        "GLOBAL_KNOWLEDGE.md",
+        "STANDARDS.md"
+      ],
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 3252,
+    "output": 1524
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "src/auth/session.py",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "human readable name",
+      "id": "src_auth_session",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "src/auth/employee.py",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "human readable name",
+      "id": "src_auth_employee",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "src/auth/task.py",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "human readable name",
+      "id": "src_auth_task",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "src/architecture.py",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "human readable name",
+      "id": "src_architecture",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "omniforces.py",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "human readable name",
+      "id": "omniforces",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "blackball.py",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "human readable name",
+      "id": "blackball",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "document",
+      "source_file": "GLOBAL_KNOWLEDGE.md",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "human readable name",
+      "id": "ai_knowledge",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "document",
+      "source_file": "STANDARDS.md",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "human readable name",
+      "id": "standards_document_header",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "document",
+      "source_file": "REPOSITORIES.md",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "human readable name",
+      "id": "repository_layout",
+      "community_name": "Human Readable Name"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "rationale",
+      "source_file": "None",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "human readable name",
+      "id": "git_branching",
+      "community_name": "Human Readable Name"
+    }
+  ],
+  "links": [
+    {
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "src/auth/session.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "src_auth_session",
+      "target": "omniforces"
+    },
+    {
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "src/auth/employee.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "src_auth_employee",
+      "target": "omniforces"
+    },
+    {
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "src/auth/task.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "src_auth_task",
+      "target": "omniforces"
+    },
+    {
+      "relation": "implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "src/architecture.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "src_architecture",
+      "target": "omniforces"
+    },
+    {
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "omniforces.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "omniforces",
+      "target": "git_branching"
+    },
+    {
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "blackball.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "blackball",
+      "target": "git_branching"
+    },
+    {
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "GLOBAL_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_knowledge",
+      "target": "standards_document_header"
+    },
+    {
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_document_header",
+      "target": "git_branching"
+    },
+    {
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repository_layout",
+      "target": "git_branching"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "87469a35178396b8fb7aa91aa7bdc5d5257aca8b"
+}
