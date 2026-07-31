@@ -1,0 +1,6 @@
+graphify-out/cac# Graphify generated cache
+graphify-out/cache/
+
+# Temporary files
+*.tmp
+*.loghe/
