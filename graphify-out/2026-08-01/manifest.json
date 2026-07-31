@@ -1,0 +1,52 @@
+{
+  "GLOBAL_KNOWLEDGE.md": {
+    "mtime": 1785524168.0,
+    "ast_hash": "1512821ca83581ebace409f73878801c",
+    "semantic_hash": "1512821ca83581ebace409f73878801c"
+  },
+  "REPOSITORIES.md": {
+    "mtime": 1785521717.56,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "repositories/AI_KNOWLEDGE.md": {
+    "mtime": 1785530058.0,
+    "ast_hash": "cdf114953b11f4cdee1fdffdcfb071e0",
+    "semantic_hash": "cdf114953b11f4cdee1fdffdcfb071e0"
+  },
+  "repositories/AI_WORKSTATION.md": {
+    "mtime": 1785530174.0,
+    "ast_hash": "11740c9a45ae5682b2a03fa84e3b7fc3",
+    "semantic_hash": "11740c9a45ae5682b2a03fa84e3b7fc3"
+  },
+  "repositories/BLACKBALL.md": {
+    "mtime": 1785530366.0,
+    "ast_hash": "a370286e7529bc51e7e68c1aa70d9746",
+    "semantic_hash": "a370286e7529bc51e7e68c1aa70d9746"
+  },
+  "repositories/OMNIFORCES.md": {
+    "mtime": 1785530294.0,
+    "ast_hash": "b78b69153fbb7b3821d04aa3c31d5c0b",
+    "semantic_hash": "b78b69153fbb7b3821d04aa3c31d5c0b"
+  },
+  "standards/STANDARDS.md": {
+    "mtime": 1785523926.0,
+    "ast_hash": "f09efed7b1560989df72e0eb65ca0444",
+    "semantic_hash": "f09efed7b1560989df72e0eb65ca0444"
+  },
+  "tasks/TASK_LIFECYCLE.md": {
+    "mtime": 1785530832.0,
+    "ast_hash": "fd6969bd0bb48b80b2540665e9a0df36",
+    "semantic_hash": "fd6969bd0bb48b80b2540665e9a0df36"
+  },
+  "tasks/TASK_STATES.md": {
+    "mtime": 1785530928.0,
+    "ast_hash": "c1e492bb193f33bb82732f394e3b1073",
+    "semantic_hash": "c1e492bb193f33bb82732f394e3b1073"
+  },
+  "tasks/TASK_TEMPLATE.md": {
+    "mtime": 1785531006.0,
+    "ast_hash": "ff70cc3fb2b0649ff7b965d49fe9d31c",
+    "semantic_hash": "ff70cc3fb2b0649ff7b965d49fe9d31c"
+  }
+}

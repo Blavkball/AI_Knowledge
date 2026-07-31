@@ -10,49 +10,27 @@
       "standard_document_header"
     ],
     "1": [
-      "employees_ai_supervisor",
-      "src_auth_continue",
-      "src_auth_forge",
-      "src_auth_session",
-      "src_auth_supervisor"
-    ],
-    "2": [
       "repositories_ai_knowledge",
       "repositories_ai_workstation",
       "repositories_blackball",
       "repositories_omniforces",
       "standards_document_header"
     ],
-    "3": [
+    "2": [
       "documentation_standards",
       "kces_principles",
       "repository_standards",
       "standards_standards_document"
     ],
-    "4": [
-      "ai_knowledge_repository",
-      "ai_workstation",
-      "omniforces"
-    ],
-    "5": [
-      "ai_knowledge"
-    ],
-    "6": [
-      "blackball"
-    ],
-    "7": [
-      "future_repositories"
+    "3": [
+      "repository_layout"
     ]
   },
   "cohesion": {
     "0": 0.38095238095238093,
-    "1": 0.4,
+    "1": 0.5,
     "2": 0.5,
-    "3": 0.5,
-    "4": 1.0,
-    "5": 1.0,
-    "6": 1.0,
-    "7": 1.0
+    "3": 1.0
   },
   "gods": [
     {
@@ -68,11 +46,6 @@
     {
       "id": "standards_standards_document",
       "label": "KingC Engineering Standard",
-      "degree": 3
-    },
-    {
-      "id": "src_auth_session",
-      "label": "Human Readable Name",
       "degree": 3
     },
     {
@@ -104,6 +77,11 @@
       "id": "graphify_standards",
       "label": "Graphify Standards",
       "degree": 2
+    },
+    {
+      "id": "git_standards",
+      "label": "Git Standards",
+      "degree": 2
     }
   ],
   "surprises": [
@@ -117,17 +95,6 @@
       "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
       "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
       "why": "connects across different repos/directories"
-    },
-    {
-      "source": "Human Readable Name",
-      "target": "Human Readable Name",
-      "source_files": [
-        "employees/CONTINUE.md",
-        "employees/AI_EMPLOYEES.md"
-      ],
-      "confidence": "INFERRED",
-      "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source"
     },
     {
       "source": "AI Workstation",
@@ -161,10 +128,21 @@
       "confidence": "EXTRACTED",
       "relation": "provides",
       "why": "cross-file semantic connection"
+    },
+    {
+      "source": "AI Knowledge",
+      "target": "AI Workstation",
+      "source_files": [
+        "repositories/AI_Knowledge.md",
+        "repositories/AI_Workstation.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "depends_on",
+      "why": "cross-file semantic connection"
     }
   ],
   "tokens": {
-    "input": 11703,
-    "output": 2347
+    "input": 5336,
+    "output": 2224
   }
 }

@@ -4,11 +4,6 @@
     "ast_hash": "1512821ca83581ebace409f73878801c",
     "semantic_hash": "1512821ca83581ebace409f73878801c"
   },
-  "REPOSITORIES.md": {
-    "mtime": 1785521717.56,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
-    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
-  },
   "repositories/AI_KNOWLEDGE.md": {
     "mtime": 1785530058.0,
     "ast_hash": "cdf114953b11f4cdee1fdffdcfb071e0",
@@ -48,5 +43,50 @@
     "mtime": 1785531006.0,
     "ast_hash": "ff70cc3fb2b0649ff7b965d49fe9d31c",
     "semantic_hash": "ff70cc3fb2b0649ff7b965d49fe9d31c"
+  },
+  "architecture/ECOSYSTEM_ARCHITECTURE.md": {
+    "mtime": 1785529946.0,
+    "ast_hash": "8ad514bdb36f93969aa4b8dbae46f72f",
+    "semantic_hash": "8ad514bdb36f93969aa4b8dbae46f72f"
+  },
+  "architecture/KNOWLEDGE_INTEGRATION.md": {
+    "mtime": 1785539116.0,
+    "ast_hash": "ecfd92af832ac18608539d77155ee94b",
+    "semantic_hash": "ecfd92af832ac18608539d77155ee94b"
+  },
+  "architecture/README.md": {
+    "mtime": 1785533542.0,
+    "ast_hash": "3a32072b699c122a588c541790b716dd",
+    "semantic_hash": "3a32072b699c122a588c541790b716dd"
+  },
+  "architecture/SYSTEM_OVERVIEW.md": {
+    "mtime": 1785529170.0,
+    "ast_hash": "11ad0fbb71b1a09f53f2ac29c31f746a",
+    "semantic_hash": "11ad0fbb71b1a09f53f2ac29c31f746a"
+  },
+  "employees/AI_EMPLOYEES.md": {
+    "mtime": 1785529258.0,
+    "ast_hash": "8d23c2ff554820d273ba8e577dcfcf5c",
+    "semantic_hash": "8d23c2ff554820d273ba8e577dcfcf5c"
+  },
+  "employees/AI_SUPERVISOR.md": {
+    "mtime": 1785530472.0,
+    "ast_hash": "aaa1fd9442d1bb9775998bd18b57478d",
+    "semantic_hash": "aaa1fd9442d1bb9775998bd18b57478d"
+  },
+  "employees/CONTINUE.md": {
+    "mtime": 1785530650.0,
+    "ast_hash": "36270fbce644412c00b4461177872e30",
+    "semantic_hash": "36270fbce644412c00b4461177872e30"
+  },
+  "employees/FORGE.md": {
+    "mtime": 1785530560.0,
+    "ast_hash": "4612ede78b72cac0108f44663ff609df",
+    "semantic_hash": "4612ede78b72cac0108f44663ff609df"
+  },
+  "repositories/REPOSITORIES.md": {
+    "mtime": 1785529188.0,
+    "ast_hash": "af97e0a01e7b7ab2e0bffe7c3661da7c",
+    "semantic_hash": "af97e0a01e7b7ab2e0bffe7c3661da7c"
   }
 }
