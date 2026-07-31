@@ -1,6 +1,8 @@
-# Session Handover
+# KingC Software Session Handover
 
-**Document:** SESSION_HANDOVER_2026-07-31.md
+---
+
+**Document:** SESSION_HANDOVER_2026-08-01.md
 
 **Version:** 1.0
 
@@ -8,218 +10,369 @@
 
 **Owner:** KingC Software
 
-**Last Updated:** 31 July 2026
+**Last Updated:** 01 August 2026
 
 **Source of Truth:** AI_Knowledge
 
 **Applies To:**
 
 - AI_Knowledge
-- OmniForces
 - AI_Workstation
-- BlackBall
-
----
-
-# Session Summary
-
-This session established the foundations of the KingC Software Global Knowledge System.
-
-The focus shifted from building individual repositories to building a complete engineering ecosystem.
-
----
-
-# Completed Today
-
-## OmniForces
-
-- Graphify graph updated
-- Graph reclustered
-- Graph report regenerated
-- Tree visualisation generated
-- Repository committed
-- Repository pushed
-
-Status:
-
-Working tree clean.
-
----
-
-## AI_Workstation
-
-Completed semantic Graphify extraction.
-
-Completed Graphify clustering.
-
-Merged into Global Graph.
-
-Repository graph committed.
-
-Repository pushed.
-
-Status:
-
-Working tree clean.
-
----
-
-## BlackBall
-
-Completed semantic extraction.
-
-325 nodes
-
-146 edges
-
-227 communities
-
-Merged into Global Graph.
-
-Status:
-
-Graph successfully created.
-
-Cluster complete.
-
----
-
-## Global Graph
-
-Repositories currently connected:
-
 - OmniForces
-- AI_Workstation
 - BlackBall
-
-Current location:
-
-C:\Users\kingc\.graphify\global-graph.json
+- Future KingC Software repositories
 
 ---
 
-## AI_Knowledge Repository
+# 1. Session Purpose
 
-Created.
+This document provides a complete handover point for the next human engineer or AI employee continuing work on the KingC Software ecosystem.
 
-Git repository initialised.
+The goal is to allow the next engineer to understand:
 
-Connected to GitHub.
-
-Folder structure established.
-
-Current folders:
-
-docs/
-repositories/
-architecture/
-employees/
-standards/
-tasks/
-graphify-out/
+- Current position.
+- Completed work.
+- Repository structure.
+- Remaining tasks.
+- Correct workflow.
 
 ---
 
-## Documentation Standard
+# 2. Engineering Rule
 
-Created:
+All work follows:
 
-standards/STANDARDS.md
 
-This document now defines:
+Agree
+↓
+Build
+↓
+Save
+↓
+Commit
+↓
+Verify
+↓
+Move on
 
-- document headers
-- naming
-- git
-- graphify
-- engineering principles
 
-Future documents should follow this standard.
+Completion check:
+
+
+Saved? YES
+Git? YES
+Graphify? YES
+Documentation? YES
+
 
 ---
 
-## Documentation Updated
+# 3. Current Project Position
 
-README.md
+AI_Knowledge has been established as the central source of truth for KingC Software.
 
-GLOBAL_KNOWLEDGE.md
+It contains:
 
-Both updated to the new documentation standard.
+- Architecture knowledge.
+- Repository definitions.
+- AI employee definitions.
+- Engineering standards.
+- Task management standards.
+- Knowledge integration planning.
+
+The foundation phase is complete.
 
 ---
 
-# Current Vision
+# 4. Completed Work
 
-KingC Software is now organised as a knowledge ecosystem.
+## AI_Knowledge Structure
+
+Completed:
+
 
 AI_Knowledge
 
-↓
+├── architecture
+├── repositories
+├── employees
+├── tasks
+├── standards
 
-Shared Standards
-
-↓
-
-Architecture
-
-↓
-
-Repositories
-
-↓
-
-Graphify Global Knowledge Graph
-
-↓
-
-AI Engineers
 
 ---
 
-# Immediate Next Tasks
+## Architecture Documents
 
-1.
+Completed:
 
-Finish
 
-architecture/SYSTEM_OVERVIEW.md
+architecture/
 
-2.
+SYSTEM_OVERVIEW.md
 
-Complete
+DEVELOPMENT_LIFECYCLE.md
+
+ECOSYSTEM_ARCHITECTURE.md
+
+KNOWLEDGE_INTEGRATION.md
+
+
+Purpose:
+
+Defines how KingC Software systems, repositories and knowledge connect.
+
+---
+
+## Repository Documents
+
+Completed:
+
+
+repositories/
 
 REPOSITORIES.md
 
-3.
+AI_KNOWLEDGE.md
 
-Complete
+AI_WORKSTATION.md
 
-AI_EMPLOYEES.md
+OMNIFORCES.md
 
-4.
+BLACKBALL.md
 
-Complete
 
-ATOMIC_TASKS.md
+Purpose:
 
-5.
-
-Populate Graphify using AI_Knowledge
-
-6.
-
-Introduce Obsidian once the core documentation is complete.
+Defines responsibility and ownership of each repository.
 
 ---
 
-# Long Term Vision
+## Employee Documents
 
-Every repository remains independent.
+Completed:
 
-Graphify connects them.
 
-AI_Knowledge explains them.
+employees/
 
-Obsidian visualises them.
+AI_EMPLOYEES.md
 
-OmniForces becomes the AI workforce responsible for maintaining them.
+AI_SUPERVISOR.md
+
+FORGE.md
+
+CONTINUE.md
+
+
+Purpose:
+
+Defines AI employee roles and responsibilities.
+
+---
+
+## Task Documents
+
+Completed:
+
+
+tasks/
+
+ATOMIC_TASKS.md
+
+TASK_LIFECYCLE.md
+
+TASK_STATES.md
+
+TASK_TEMPLATE.md
+
+
+Purpose:
+
+Defines how work is created, managed and completed.
+
+---
+
+## Engineering Standards
+
+Completed:
+
+
+standards/
+
+STANDARDS.md
+
+DOCUMENTATION_STANDARDS.md
+
+CODING_STANDARDS.md
+
+GIT_STANDARDS.md
+
+AI_WORKFLOW_STANDARDS.md
+
+GRAPHIFY_STANDARDS.md
+
+NAMING_CONVENTIONS.md
+
+VERSIONING_STANDARDS.md
+
+
+Purpose:
+
+Defines the engineering rules for all KingC Software repositories.
+
+---
+
+# 5. Git Status
+
+The repository should always finish clean.
+
+Required command:
+
+```powershell
+git status
+
+Expected:
+
+nothing to commit, working tree clean
+6. Graphify Status
+
+AI_Knowledge has been successfully processed with Graphify.
+
+Current process:
+
+Documentation
+      ↓
+Graphify Extraction
+      ↓
+Knowledge Graph
+      ↓
+AI Context
+
+Standard command:
+
+graphify extract . `
+    --backend ollama `
+    --model llama3.2:latest `
+    --global `
+    --as AI_Knowledge `
+    --token-budget 12000 `
+    --max-concurrency 1
+7. Cleanup Completed
+
+Empty duplicate files were identified and removed.
+
+Removed:
+
+REPOSITORIES.md
+ARCHITECTURE.md
+AI_EMPLOYEES.md
+
+from the repository root.
+
+Reason:
+
+Each topic must have one source of truth.
+
+Correct locations:
+
+repositories/REPOSITORIES.md
+
+architecture/
+
+employees/AI_EMPLOYEES.md
+8. Current Repository Philosophy
+
+AI_Knowledge explains:
+
+What exists.
+Why it exists.
+How systems connect.
+How engineers and AI employees operate.
+
+Projects contain implementation.
+
+Knowledge contains understanding.
+
+9. Next Development Phase
+
+The next phase is:
+
+OmniForces → AI_Knowledge Integration
+
+The next engineer should NOT immediately code.
+
+First:
+
+Understand the knowledge architecture.
+Define how OmniForces consumes AI_Knowledge.
+Define AI context loading.
+Define memory foundation requirements.
+Plan implementation.
+10. Future OmniForces Integration Goals
+
+Planned areas:
+
+Knowledge Retrieval
+
+Allow OmniForces to access AI_Knowledge information.
+
+Project Awareness
+
+Allow AI employees to understand:
+
+Current project.
+Repository purpose.
+Existing standards.
+Previous decisions.
+AI Memory Foundation
+
+Create a structured memory system based on:
+
+Documentation.
+Decisions.
+Tasks.
+Project history.
+Agent Workflow Improvements
+
+Improve communication between AI employees.
+
+11. Important Rules For Future Engineers
+
+Always:
+
+Read documentation before building.
+Understand before implementing.
+Keep solutions simple.
+Protect working software.
+Test changes.
+Update documentation.
+Commit logical changes.
+Keep Git clean.
+
+Never:
+
+Create duplicate sources of truth.
+Skip documentation.
+Make undocumented architecture changes.
+Expand into new systems without a plan.
+12. Current Starting Point
+
+The next engineer should begin here:
+
+Step 1:
+Verify git status
+
+Step 2:
+Review KNOWLEDGE_INTEGRATION.md
+
+Step 3:
+Plan OmniForces knowledge connection
+
+Step 4:
+Document the design
+
+Step 5:
+Only then begin implementation
+Revision History
+Version	Date	Description
+1.0	01 August 2026	Initial session handover.
