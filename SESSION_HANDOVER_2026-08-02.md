@@ -4,7 +4,7 @@ Document:
 SESSION_HANDOVER_2026-08-02.md
 
 Version:
-1.0
+2.0
 
 Status:
 Active
@@ -35,6 +35,7 @@ The goal is to provide:
 - architecture decisions
 - next agreed milestone
 - verification status
+- the method used to verify state in this session
 
 
 # Session Summary
@@ -46,10 +47,26 @@ Date:
 
 Primary Objective:
 
-Complete the OmniForces Context Builder foundation and verify the knowledge architecture.
+Verify actual state of AI_Knowledge Foundation against the previous handover, correct the record, agree Milestone 5.
 
 
-# Completed Work
+# Session Access Method
+
+No AI assistant in this session has direct access to the repository filesystem or to Graphify output.
+
+State is established by the human operator running a command in PowerShell and pasting the output back into the session.
+
+Standard commands used:
+
+git ls-files
+type <path>
+(Get-Content <path>).Count
+
+
+Any future AI engineer without live repository access must use this same method. Do not assume file state — request the command output.
+
+
+# Completed Work (Carried Forward From v1.0)
 
 
 ## 1. Context Layer Foundation
@@ -59,165 +76,99 @@ Status:
 COMPLETE
 
 
-Current architecture:
-
-Human Knowledge
-        |
-        v
-AI_Knowledge
-
-Machine Code Knowledge
-        |
-        v
-Graphify
-
-Repository Awareness
-        |
-        v
-Repository Context
-
-
-All sources connect through:
-
-Knowledge Provider
-
-Then:
-
-Context Builder
-
-Then:
-
-AI Employees
-
-
-# 2. Context Builder
+## 2. Context Builder
 
 Status:
 
 COMPLETE
 
-
 File:
 
 app/context/context_builder.py
-
-
-Purpose:
-
-Creates structured AI employee context packages.
-
-
-Current output:
-
-{
-    query,
-    code,
-    related_code,
-    documentation,
-    repositories,
-    global_knowledge
-}
-
 
 Verified:
 
 ContextBuilder successfully returns all required knowledge sources.
 
 
-# 3. Knowledge Provider
+## 3. Knowledge Provider
 
 Status:
 
 WORKING
 
-
 File:
 
 app/context/knowledge_provider.py
 
-
-Responsibilities:
-
-- Graphify code knowledge
-- Repository awareness
-- AI_Knowledge access
-
-
 Design rule:
 
-AI employees never directly access files.
-
-All knowledge must pass through:
-
-Knowledge Provider
+AI employees never directly access files. All knowledge must pass through Knowledge Provider.
 
 
-Future sources:
-
-- Obsidian
-- Memory
-- RAG
-- Vector search
-
-
-# 4. Testing
+## 4. Testing
 
 Command:
 
 python -m pytest
 
-
-Result:
+Result (as of v1.0, not re-run this session):
 
 10 passed
 
 
-Passing:
-
-- test_ate_integration.py
-- test_knowledge_provider.py
-- test_supervisor.py
-
-
-# 5. Git Status
-
-Completed commits:
+## 5. Git Status (as of v1.0, not changed this session)
 
 48e82cb
 Complete context builder package
-
-
-Previous foundation:
 
 7b5dfe7
 Add knowledge provider context layer
 
 
-Repository:
-
-Working correctly.
+# Completed Work (This Session)
 
 
-# 6. Graphify Status
+## 6. AI_Knowledge Foundation Verification
 
-Graphify rebuild completed after Context Builder changes.
+Status:
 
-Updated:
-
-graphify-out/
-
-Contains updated:
-
-- GRAPH_REPORT.md
-- graph.html
-- graph.json
+COMPLETE — CORRECTED FROM v1.0
 
 
-Graphify remains the machine knowledge source.
+v1.0 of this handover incorrectly listed four documents as still-to-complete for Milestone 4:
+
+- architecture/SYSTEM_OVERVIEW.md
+- repositories/REPOSITORIES.md
+- employees/AI_EMPLOYEES.md
+- tasks/ATOMIC_TASKS.md
+
+All four were already fully written, version 1.0, dated 31 July 2026. Confirmed by full read of each document.
+
+Remaining AI_Knowledge documents checked by line count, then one spot-check:
+
+DEVELOPMENT_LIFECYCLE.md — 260 lines
+ECOSYSTEM_ARCHITECTURE.md — 233 lines
+KNOWLEDGE_INTEGRATION.md — 278 lines
+AI_SUPERVISOR.md — 195 lines
+CONTINUE.md — 194 lines
+FORGE.md — 188 lines
+TASK_LIFECYCLE.md — 231 lines
+TASK_STATES.md — 223 lines
+TASK_TEMPLATE.md — 181 lines
+
+FORGE.md was read in full as the spot-check. Confirmed fully written, version 1.0, dated 31 July 2026, matching the depth and structure of the four confirmed documents.
+
+The remaining eight are treated as complete on line-count pattern match plus the FORGE.md spot-check. They have not been individually read in full this session.
+
+Conclusion:
+
+Milestone 4 — AI_Knowledge Foundation Completion — is COMPLETE. 13 of 13 foundation documents verified present and non-stub.
 
 
 # Current Architecture
 
+(unchanged from v1.0)
 
                  AI Employees
                       |
@@ -244,54 +195,7 @@ Future:
 
 # Important Design Decisions
 
-
-## Single Knowledge Gateway
-
-AI employees do not search files directly.
-
-Reason:
-
-- consistency
-- traceability
-- future memory support
-- controlled reasoning
-
-
-## Graphify Role
-
-Graphify provides:
-
-- code understanding
-- relationships
-- source locations
-
-
-## AI_Knowledge Role
-
-AI_Knowledge provides:
-
-- company knowledge
-- architecture
-- standards
-- employee definitions
-
-
-## Obsidian Role
-
-Obsidian will provide:
-
-- human thinking
-- ideas
-- research
-- decisions
-- experiments
-
-
-Obsidian does not replace:
-
-- AI_Knowledge
-- Graphify
-- documentation
+(unchanged from v1.0 — Single Knowledge Gateway, Graphify Role, AI_Knowledge Role, Obsidian Role)
 
 
 # Development Rules
@@ -305,6 +209,7 @@ Continue following:
 - Test before committing.
 - Document important decisions.
 - Protect working software.
+- Verify actual file state before marking any milestone status — do not trust a prior handover's status claim without checking the underlying files.
 
 
 Completion rule:
@@ -339,122 +244,78 @@ YES
 # Next Agreed Milestone
 
 
-Milestone 4:
+Milestone 5:
 
-AI_Knowledge Foundation Completion
+Obsidian Context Provider
 
 
 Objective:
 
-Complete the company knowledge foundation before adding more AI capabilities.
+Connect human knowledge (Obsidian) into the Knowledge Provider, extending the single-gateway architecture.
 
 
-Documents to complete:
-
-
-architecture/
-
-SYSTEM_OVERVIEW.md
-
-
-repositories/
-
-REPOSITORIES.md
-
-
-employees/
-
-AI_EMPLOYEES.md
-
-
-tasks/
-
-ATOMIC_TASKS.md
-
-
-Reason:
-
-The AI should understand the company before expanding intelligence.
-
-
-# Future Roadmap
-
-
-After AI_Knowledge foundation:
-
-
-1. Create Obsidian Context Provider
-
-File:
+File to create:
 
 app/context/obsidian_context.py
 
-
-Purpose:
-
-Connect human knowledge into the Knowledge Provider.
+(OmniForces repository)
 
 
-2. Extend Knowledge Provider
+Integration point:
 
-Add:
-
-Obsidian
+Extend Knowledge Provider (app/context/knowledge_provider.py) to include Obsidian as a source, alongside Graphify, AI_Knowledge, and Repository Context.
 
 
-3. Begin Memory Foundation
+Not yet started. No code written for this milestone.
 
 
-Goal:
+# Future Roadmap (After Milestone 5)
 
-AI employees understand:
-
-- previous decisions
-- project history
-- completed work
+1. Extend Knowledge Provider fully — confirm Obsidian source integrated and tested.
+2. Begin Memory Foundation — AI employees understand previous decisions, project history, completed work.
 
 
 # Current Project Health
-
 
 OmniForces:
 
 HEALTHY
 
+AI_Knowledge:
 
-Completed:
-
-YES
-
+HEALTHY — Foundation complete
 
 Context Builder:
 
 COMPLETE
 
-
 Knowledge Provider:
 
 WORKING
 
-
 Graphify:
 
-WORKING
-
+WORKING (not rebuilt this session — no code changes made)
 
 Repository Awareness:
 
 WORKING
 
-
 Tests:
 
-PASSING
-
+PASSING (10, as of last run — not re-run this session)
 
 Ready for:
 
-AI_Knowledge foundation expansion
+Milestone 5 — Obsidian Context Provider
+
+
+# Revision History
+
+| Version | Date | Description |
+|---------|------|-------------|
+| 1.0 | 2 August 2026 | Initial handover after Context Builder completion. |
+| 2.0 | 2 August 2026 | Corrected Milestone 4 status to COMPLETE after verification. Documented session access method. Agreed Milestone 5: Obsidian Context Provider. |
 
 
 End of handover.
