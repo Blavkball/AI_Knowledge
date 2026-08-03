@@ -94,7 +94,8 @@ All development follows this process:
 5. Test thoroughly
 6. Update affected documentation
 7. Commit working code
-8. Verify a clean repository
+8. Run Graphify
+9. Verify a clean repository
 
 ---
 
@@ -159,3 +160,47 @@ Before finishing work:
 
 ```text
 git status
+git add .
+git commit -m "message"
+git push
+```
+
+Confirm working tree is clean before considering work finished.
+
+---
+
+# Definition of Done
+
+Every piece of work is finished only when all four are true:
+
+- Saved
+- Committed to Git
+- Graphified
+- Documentation updated
+
+If any answer is no, the work is not finished.
+
+---
+
+# Reading Order
+
+Read in this order:
+
+1. STANDARDS.md (this document)
+2. CODING_STANDARDS.md
+3. DOCUMENTATION_STANDARDS.md
+4. GIT_STANDARDS.md
+5. GRAPHIFY_STANDARDS.md
+6. NAMING_CONVENTIONS.md
+7. VERSIONING_STANDARDS.md
+
+---
+
+# Related Standards
+
+- [CODING_STANDARDS.md](./CODING_STANDARDS.md)
+- [DOCUMENTATION_STANDARDS.md](./DOCUMENTATION_STANDARDS.md)
+- [GIT_STANDARDS.md](./GIT_STANDARDS.md)
+- [GRAPHIFY_STANDARDS.md](./GRAPHIFY_STANDARDS.md)
+- [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md)
+- [VERSIONING_STANDARDS.md](./VERSIONING_STANDARDS.md)

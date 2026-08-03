@@ -166,14 +166,32 @@ Documentation is part of the software system and must be version controlled.
 
 Git Verification Checklist
 
-Before completing a task:
+This checklist follows the Definition of Done in STANDARDS.md: Saved? Git? Graphify? Documentation?
+
+Before completing a task, confirm all four:
 
 Saved?
-Git status checked?
-Changes staged?
-Commit created?
-Push completed?
-Repository clean?
+
+- Work is written to disk.
+
+Git?
+
+- git status checked
+- Changes staged
+- Commit created
+- Push completed
+- Repository clean
+
+Graphify?
+
+- Graphify run per GRAPHIFY_STANDARDS.md
+- Extraction confirmed successful
+
+Documentation?
+
+- Affected documentation updated per DOCUMENTATION_STANDARDS.md
+
+Work is not complete until all four are yes.
 Source of Truth
 
 This document defines the official Git standards for KingC Software.
