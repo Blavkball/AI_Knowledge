@@ -1,186 +1,161 @@
-# KingC Engineering Standard (KCES)
+# KingC Software Standards
 
-**Document:** STANDARDS.md
+## Purpose
 
-**Version:** 1.0
+This document defines the shared standards used across KingC Software.
 
-**Status:** Operational Engineering Standard
+These standards are the source of truth for:
 
-**Owner:** KingC Software
-
-**Last Updated:** 31 July 2026
-
-**Source of Truth:** AI_Knowledge
-
-**Applies To:**
-
-- AI_Knowledge
-- AI_Workstation
-- OmniForces
-- BlackBall
-- All future KingC Software repositories
-
----
-
-# 1. Purpose
-
-This document defines the engineering standards used throughout every KingC Software repository.
-
-All AI employees and human engineers are expected to follow these standards when creating software, documentation, architecture, Git history, and project structure.
-
-This document is the primary engineering handbook for the KingC Software ecosystem.
-
----
-
-# 2. Engineering Principles (KCES)
-
-(Your KCES principles go here.)
-
----
-
-# 3. Repository Standards
-
-Describe:
-
-- Repository layout
-- Required folders
-- Source of Truth
+- Engineering practices
 - Documentation expectations
-- Branch strategy
+- Development quality
+- AI-assisted workflows
+
+Current standards are maintained in:
+
+AI_Knowledge/standards/STANDARDS.md
 
 ---
 
-# 4. Documentation Standards
+# Core Principles
 
-## Required Header
+## Understand Before Building
 
-Every document must begin with:
+Before creating solutions:
 
-```markdown
-# Document Title
+- Understand the problem
+- Understand existing systems
+- Understand requirements
+- Understand constraints
 
-**Document:**
-**Version:**
-**Status:**
-**Owner:**
-**Last Updated:**
-**Source of Truth:**
-**Applies To:**
-```
-
-## Versioning
-
-Describe version numbering.
-
-## Status Values
-
-Examples:
-
-- Draft
-- Review
-- Operational
-- Archived
-
-## Source of Truth
-
-Explain that every document has one canonical home.
-
-## Applies To
-
-List every repository affected.
-
-## Markdown Standards
-
-Explain formatting rules.
+Do not build solutions based on assumptions.
 
 ---
 
-# 5. Standard Document Header
+## Explain Before Implementing
 
-```markdown
-# Document Title
+Important changes should include:
 
-**Document:** DOCUMENT_NAME.md
+- What is changing
+- Why it is changing
+- How it will work
+- Potential risks
 
-**Version:** 1.0
-
-**Status:** Draft
-
-**Owner:** KingC Software
-
-**Last Updated:** DD Month YYYY
-
-**Source of Truth:** Repository Name
-
-**Applies To:**
-
-- Repository
-```
+Clear communication improves decision quality.
 
 ---
 
-# 6. Naming Standards
+## Simplicity Over Complexity
 
-Examples:
+Prefer:
 
-Repositories
+- Simple solutions
+- Clear code
+- Maintainable architecture
+- Practical designs
 
-- AI_Workstation
-- OmniForces
-- BlackBall
-
-Documents
-
-UPPER_CASE.md
-
-Classes
-
-PascalCase
-
-Functions
-
-snake_case
+Avoid unnecessary complexity.
 
 ---
 
-# 7. Folder Standards
+## Quality Over Speed
 
-Define common folder layouts.
+Software should be built to last.
 
----
+Prioritise:
 
-# 8. Graphify Standards
-
-How Graphify should be used.
-
-Global Knowledge Graph expectations.
-
-Repository graph rules.
+- Reliability
+- Maintainability
+- Testing
+- Clear design
 
 ---
 
-# 9. Git Standards
+## Protect Working Software
 
-Branch naming
+Existing working systems should be treated carefully.
 
-Commit messages
+Before major changes:
 
-Pull Requests
-
-Merge policy
-
----
-
-# 10. AI Employee Rules
-
-Reference AI employee handbook.
-
-Describe required behaviour.
+- Create checkpoints
+- Understand impact
+- Test thoroughly
 
 ---
 
-# Revision History
+# Software Development Standards
 
-| Version | Date | Description |
-|----------|------|-------------|
-|1.0|31 Jul 2026|Initial KingC Engineering Standard|
+All development follows this process:
+
+1. Read documentation
+2. Understand the assignment
+3. Create a plan
+4. Build the solution
+5. Test thoroughly
+6. Update affected documentation
+7. Commit working code
+8. Verify a clean repository
+
+---
+
+# Coding Standards
+
+Code should be:
+
+- Readable
+- Maintainable
+- Simple
+- Consistent
+
+Developers should:
+
+- Avoid unnecessary complexity
+- Prefer clear solutions
+- Explain important decisions
+- Protect existing functionality
+
+---
+
+# Testing Standards
+
+Before completing work:
+
+- Test changes
+- Verify expected behaviour
+- Check for regressions
+- Confirm the system remains stable
+
+Untested changes should not be considered complete.
+
+---
+
+# Documentation Standards
+
+Documentation should:
+
+- Have one clear purpose
+- Maintain one source of truth
+- Record important decisions
+- Support future understanding
+
+Avoid:
+
+- Duplicate documentation
+- Conflicting information
+- Unnecessary documents
+
+---
+
+# Repository Standards
+
+Repositories should maintain:
+
+- Clear structure
+- Logical commits
+- Meaningful history
+- Clean working state
+
+Before finishing work:
+
+```text
+git status
