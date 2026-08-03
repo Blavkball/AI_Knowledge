@@ -1,145 +1,100 @@
-# AI_WORKSTATION.md
-
----
-Version: 1.0
-Status: Active
-Repository: AI_Knowledge
-Owner: KingC Software
-Last Updated: 31 July 2026
----
-
 # AI_Workstation Repository
 
 ## Purpose
 
-AI_Workstation is the engineering workspace for KingC Software.
+AI_Workstation is the operational environment repository for KingC Software's AI-assisted development workflow.
 
-It provides the environment, processes and documentation required to support AI-assisted software development.
+It explains how the AI engineering environment is organised and used.
 
-AI_Workstation explains how KingC Software works.
+AI_Workstation is not the source of truth for company standards, architecture, or engineering rules.
 
----
+Those are maintained in:
 
-# Mission
-
-Provide a structured development environment where humans and AI employees can build reliable software using consistent engineering practices.
-
----
-
-# Responsibilities
-
-AI_Workstation is responsible for:
-
-- Development workflow management.
-- AI onboarding information.
-- Engineering guidance.
-- Session continuity.
-- Development standards reference.
-- Project coordination.
-- Documentation support.
+AI_Knowledge
 
 ---
 
 # Repository Role
 
-AI_Workstation is the operational workspace.
-
-It connects company knowledge with practical development activities.
-
-AI_Workstation does not replace AI_Knowledge.
-
-AI_Knowledge defines the standards.
-
-AI_Workstation applies those standards.
-
----
-
-# Relationship With AI_Knowledge
-
-
-AI_Knowledge
-
-  |
-  |
-  ▼
-
-AI_Workstation
-
-
-AI_Knowledge provides:
-
-- Architecture.
-- Standards.
-- Processes.
-- Documentation rules.
-
 AI_Workstation provides:
 
-- Working environment.
-- Developer guidance.
-- AI workflow support.
-- Session management.
+- AI engineer onboarding information
+- Development environment guidance
+- Workflow explanations
+- Historical documentation
+- Evolution records
+
+It helps AI employees and developers understand how KingC Software operates.
 
 ---
 
-# Relationship With Other Repositories
+# Source of Truth Ownership
 
-## OmniForces
+## AI_Knowledge
 
-AI_Workstation supports development of OmniForces by providing:
+Owns:
 
-- Engineering practices.
-- Documentation standards.
-- Development workflow.
+- Engineering standards
+- Architecture decisions
+- AI employee definitions
+- AI employee rules
+- Shared company knowledge
 
----
+Location:
 
-## BlackBall
-
-AI_Workstation supports BlackBall by providing:
-
-- Development structure.
-- Project workflow.
-- Engineering consistency.
+AI_Knowledge/
 
 ---
 
-# Core Functions
+## AI_Workstation
 
-## AI Development Support
+Owns:
 
-AI_Workstation enables:
+- Environment guidance
+- AI workflow explanation
+- Onboarding information
+- Historical evolution
 
-- AI-assisted development.
-- Structured problem solving.
-- Technical discussions.
-- Knowledge transfer.
+Location:
 
----
-
-## Documentation Management
-
-AI_Workstation maintains:
-
-- Session information.
-- Engineering notes.
-- Development guidance.
-- Operational documentation.
+AI_Workstation/
 
 ---
 
-## Engineering Standards
+## Project Repositories
 
-AI_Workstation follows:
+Own:
 
-- Understand before building.
-- Explain before implementing.
-- Test before committing.
-- Document important decisions.
-- Protect working software.
+- Application code
+- Project-specific documentation
+- Product decisions
+- Feature development
+
+Examples:
+
+- Black Ball
+- OmniForces
 
 ---
 
-# Development Workflow
+# Knowledge Flow
 
-All work follows:
+```text
+AI_Knowledge
+      |
+      | Standards and architecture
+      ↓
+
+AI_Workstation
+      |
+      | Environment and workflow guidance
+      ↓
+
+Project Repositories
+      |
+      | Product development
+      ↓
+
+Graphify
+      |
+      | Knowledge retrieval layer
