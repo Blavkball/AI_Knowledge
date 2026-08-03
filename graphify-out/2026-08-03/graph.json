@@ -1,0 +1,1229 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "participate_in_employees",
+        "label": "Human Readable Label",
+        "nodes": [
+          "src_auth_session",
+          "employees_ai_supervisor"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.75,
+        "source_file": "employees/FORGE.md"
+      },
+      {
+        "id": "engineering_ecosystem",
+        "label": "Engineering Ecosystem",
+        "nodes": [
+          "repositories_ai_knowledge",
+          "repositories_ai_workstation",
+          "repositories_omniforces",
+          "repositories_blackball"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "repositories"
+      },
+      {
+        "id": "conceptually_related_to",
+        "label": "",
+        "nodes": [
+          "src_auth_session"
+        ],
+        "relation": "conceptually_related_to",
+        "confidence": "EXTRACTED",
+        "source_file": "tasks/TASK_TEMPLATE.md",
+        "source_location": null
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "OmniForces",
+      "file_type": "document",
+      "source_file": "repositories/OmniForces.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": "KingC Software",
+      "community": 3,
+      "norm_label": "omniforces",
+      "community_name": "AI Knowledge",
+      "id": "repositories_omniforces"
+    },
+    {
+      "label": "BlackBall",
+      "file_type": "document",
+      "source_file": "repositories/BlackBall.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": "KingC Software",
+      "community": 3,
+      "norm_label": "blackball",
+      "community_name": "AI Knowledge",
+      "id": "repositories_blackball"
+    },
+    {
+      "label": "AI Knowledge",
+      "file_type": "document",
+      "source_file": "repositories/AI_Knowledge.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": "KingC Software",
+      "contributor": null,
+      "community": 3,
+      "norm_label": "ai knowledge",
+      "community_name": "AI Knowledge",
+      "id": "repositories_ai_knowledge"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "document",
+      "source_file": "STANDARDS.md",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "human readable name",
+      "community_name": "AI Knowledge",
+      "id": "standards_document_header"
+    },
+    {
+      "label": "AI Workstation",
+      "file_type": "document",
+      "source_file": "repositories/AI_Workstation.md",
+      "source_location": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": "KingC Software",
+      "community": 3,
+      "norm_label": "ai workstation",
+      "community_name": "AI Knowledge",
+      "id": "repositories_ai_workstation"
+    },
+    {
+      "label": "OmniForces",
+      "file_type": "concept",
+      "source_file": "omniforces",
+      "captured_at": null,
+      "author": "KingC Software",
+      "community": 11,
+      "norm_label": "omniforces",
+      "community_name": "Workstation",
+      "id": "omniforces"
+    },
+    {
+      "label": "AI Workstation",
+      "file_type": "concept",
+      "source_file": "ai_workstation",
+      "captured_at": null,
+      "author": "KingC Software",
+      "community": 11,
+      "norm_label": "ai workstation",
+      "community_name": "Workstation",
+      "id": "ai_workstation"
+    },
+    {
+      "label": "BlackBall",
+      "file_type": "concept",
+      "source_file": "blackball",
+      "captured_at": null,
+      "author": "KingC Software",
+      "community": 18,
+      "norm_label": "blackball",
+      "community_name": "BlackBall",
+      "id": "blackball"
+    },
+    {
+      "label": "AI Knowledge",
+      "file_type": "concept",
+      "source_file": "architecture/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 14,
+      "norm_label": "ai knowledge",
+      "community_name": "AI Knowledge",
+      "id": "ai_knowledge"
+    },
+    {
+      "label": "Future Repositories",
+      "file_type": "concept",
+      "source_file": "architecture/SYSTEM_OVERVIEW.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 20,
+      "norm_label": "future repositories",
+      "community_name": "Future Repositories",
+      "id": "future_repositories"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "employees/FORGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "verification": "unverified",
+      "community": 6,
+      "norm_label": "human readable name",
+      "community_name": "Human Readable Name",
+      "id": "src_auth_session"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "employees/CONTINUE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "verification": "unverified",
+      "community": 27,
+      "norm_label": "human readable name",
+      "community_name": "Human Readable Name",
+      "id": "src_auth_continue"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "code",
+      "source_file": "employees/AI_SUPERVISOR.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "verification": "unverified",
+      "community": 6,
+      "norm_label": "human readable name",
+      "community_name": "Human Readable Name",
+      "id": "src_auth_supervisor"
+    },
+    {
+      "label": "Human Readable Name",
+      "file_type": "concept",
+      "source_file": "employees/AI_SUPERVISOR.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "norm_label": "human readable name",
+      "community_name": "Human Readable Name",
+      "id": "employees_ai_supervisor"
+    },
+    {
+      "label": "README.md for AI Knowledge",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 24,
+      "norm_label": "readme.md for ai knowledge",
+      "community_name": "AI Knowledge README",
+      "id": "readme_ai_knowledge"
+    },
+    {
+      "label": "OmniForces Repository",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 23,
+      "norm_label": "omniforces repository",
+      "community_name": "OmniForces Repository",
+      "id": "omni_forces_repository"
+    },
+    {
+      "label": "AI_Workstation Repository",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 15,
+      "norm_label": "ai_workstation repository",
+      "community_name": "Repository",
+      "id": "ai_workstation_repository"
+    },
+    {
+      "label": "BlackBall Repository",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 17,
+      "norm_label": "blackball repository",
+      "community_name": "BlackBall Repo",
+      "id": "black_ball_repository"
+    },
+    {
+      "label": "Global Architecture Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 21,
+      "norm_label": "global architecture document",
+      "community_name": "Global Architecture",
+      "id": "global_architecture_document"
+    },
+    {
+      "label": "Engineering Standards Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 19,
+      "norm_label": "engineering standards document",
+      "community_name": "Engineering Standards",
+      "id": "engineering_standards_document"
+    },
+    {
+      "label": "AI Employee Definitions Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 13,
+      "norm_label": "ai employee definitions document",
+      "community_name": "Employee Definitions",
+      "id": "ai_employee_definitions_document"
+    },
+    {
+      "label": "Atomic Task Methodology Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 16,
+      "norm_label": "atomic task methodology document",
+      "community_name": "Task Methodology",
+      "id": "atomic_task_methodology_document"
+    },
+    {
+      "label": "Repository Relationships Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 25,
+      "norm_label": "repository relationships document",
+      "community_name": "Repo Relationships",
+      "id": "repository_relationships_document"
+    },
+    {
+      "label": "Shared Documentation Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 26,
+      "norm_label": "shared documentation document",
+      "community_name": "Shared Docs",
+      "id": "shared_documentation_document"
+    },
+    {
+      "label": "Global Graphify Knowledge Graph Document",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 22,
+      "norm_label": "global graphify knowledge graph document",
+      "community_name": "Graphify Knowledge Graph",
+      "id": "global_graphify_knowledge_graph_document"
+    },
+    {
+      "label": "Session Handover 2026-08-01",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "community": 1,
+      "norm_label": "session handover 2026-08-01",
+      "community_name": "Session Handover",
+      "id": "session_handover_2026-08-01"
+    },
+    {
+      "label": "Session Handover 2026-08-02",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "community": 1,
+      "norm_label": "session handover 2026-08-02",
+      "community_name": "Session Handover",
+      "id": "session_handover_2026-08-02"
+    },
+    {
+      "label": "Graphify Context Integration",
+      "file_type": "code",
+      "source_file": "app/context/graphify_context.py",
+      "community": 1,
+      "norm_label": "graphify context integration",
+      "community_name": "Session Handover",
+      "id": "app_context_graphify_context_py"
+    },
+    {
+      "label": "Repository Context",
+      "file_type": "code",
+      "source_file": "app/context/repository_context.py",
+      "community": 1,
+      "norm_label": "repository context",
+      "community_name": "Session Handover",
+      "id": "app_context_repository_context_py"
+    },
+    {
+      "label": "Knowledge Provider",
+      "file_type": "code",
+      "source_file": "app/context/knowledge_provider.py",
+      "community": 1,
+      "norm_label": "knowledge provider",
+      "community_name": "Session Handover",
+      "id": "app_context_knowledge_provider_py"
+    },
+    {
+      "label": "Context Builder",
+      "file_type": "code",
+      "source_file": "app/context/context_builder.py",
+      "community": 1,
+      "norm_label": "context builder",
+      "community_name": "Session Handover",
+      "id": "app_context_context_builder_py"
+    },
+    {
+      "label": "OmniForces \u2013 Session Handover",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "omniforces \u2013 session handover",
+      "community_name": "Development Lifecycle",
+      "id": "session_handover_2026_08_20_40pm_md"
+    },
+    {
+      "label": "Development Lifecycle",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "development lifecycle",
+      "community_name": "Development Lifecycle",
+      "id": "architecture_development_lifecycle_md"
+    },
+    {
+      "label": "AI Employees",
+      "file_type": "document",
+      "source_file": "employees/AI_EMPLOYEES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "ai employees",
+      "community_name": "Development Lifecycle",
+      "id": "employees_ai_employees_md"
+    },
+    {
+      "label": "AgentManager",
+      "file_type": "code",
+      "source_file": "src/agent_manager.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "agentmanager",
+      "community_name": "Agent Management",
+      "id": "src_agent_manager_py"
+    },
+    {
+      "label": "KnowledgeProvider",
+      "file_type": "code",
+      "source_file": "src/knowledge_provider.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "knowledgeprovider",
+      "community_name": "Agent Management",
+      "id": "src_knowledge_provider_py"
+    },
+    {
+      "label": "ObsidianContext",
+      "file_type": "code",
+      "source_file": "src/obsidian_context.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "obsidiancontext",
+      "community_name": "Agent Management",
+      "id": "src_obsidian_context_py"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "code",
+      "source_file": "src/graphify.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "graphify",
+      "community_name": "Agent Management",
+      "id": "src_graphify_py"
+    },
+    {
+      "label": "MemoryManager",
+      "file_type": "code",
+      "source_file": "src/memory_manager.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "memorymanager",
+      "community_name": "Agent Management",
+      "id": "src_memory_manager_py"
+    },
+    {
+      "label": "KC-001 \u2014 Forge",
+      "file_type": "document",
+      "source_file": "employees/AI_EMPLOYEES.md#kc_001_forge",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "kc-001 \u2014 forge",
+      "community_name": "Development Lifecycle",
+      "id": "ai_employee_kc_001_md"
+    },
+    {
+      "label": "KC-002 \u2014 Continue",
+      "file_type": "document",
+      "source_file": "employees/AI_EMPLOYEES.md#kc_002_continue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 2,
+      "norm_label": "kc-002 \u2014 continue",
+      "community_name": "Development Lifecycle",
+      "id": "ai_employee_kc_002_md"
+    },
+    {
+      "label": "AI Employee Rules",
+      "file_type": "document",
+      "source_file": "employees/AI_EMPLOYEE_RULES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "ai employee rules",
+      "community_name": "AI Rules",
+      "id": "employees_ai_employee_rules_md"
+    },
+    {
+      "label": "Employees README",
+      "file_type": "document",
+      "source_file": "employees/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "employees readme",
+      "community_name": "Employees README",
+      "id": "employees_readme_md"
+    },
+    {
+      "label": "AI_Workstation Repository",
+      "file_type": "document",
+      "source_file": "repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 10,
+      "norm_label": "ai_workstation repository",
+      "community_name": "Repository",
+      "id": "repositories_ai_workstation_md"
+    },
+    {
+      "label": "AI Knowledge - AI Employee Rules",
+      "file_type": "document",
+      "source_file": "AI_Knowledge/employees/AI_EMPLOYEE_RULES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "ai knowledge - ai employee rules",
+      "community_name": "AI Rules",
+      "id": "ai_knowledge_employees_ai_employee_rules_md"
+    },
+    {
+      "label": "AI Knowledge - Employees README",
+      "file_type": "document",
+      "source_file": "AI_Knowledge/employees/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 9,
+      "norm_label": "ai knowledge - employees readme",
+      "community_name": "Employees README",
+      "id": "ai_knowledge_employees_readme_md"
+    },
+    {
+      "label": "AI Knowledge - AI_Workstation Repository",
+      "file_type": "document",
+      "source_file": "AI_Knowledge/repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 10,
+      "norm_label": "ai knowledge - ai_workstation repository",
+      "community_name": "Repository",
+      "id": "ai_knowledge_repositories_ai_workstation_md"
+    },
+    {
+      "label": "AI Knowledge - AI_Workstation History",
+      "file_type": "document",
+      "source_file": "AI_Knowledge/employees/AI_EMPLOYEE_RULES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "ai knowledge - ai_workstation history",
+      "community_name": "AI Rules",
+      "id": "ai_knowledge_ai_workstation_history"
+    },
+    {
+      "label": "Repositories README",
+      "file_type": "document",
+      "source_file": "repositories/README.md",
+      "community": 7,
+      "norm_label": "repositories readme",
+      "community_name": "Coding Standards",
+      "id": "repositories_readme"
+    },
+    {
+      "label": "AI Workflow Standards",
+      "file_type": "document",
+      "source_file": "standards/AI_WORKFLOW_STANDARDS.md",
+      "community": 7,
+      "norm_label": "ai workflow standards",
+      "community_name": "Coding Standards",
+      "id": "standards_ai_workflow_standards"
+    },
+    {
+      "label": "Coding Standards",
+      "file_type": "document",
+      "source_file": "standards/CODING_STANDARDS.md",
+      "community": 7,
+      "norm_label": "coding standards",
+      "community_name": "Coding Standards",
+      "id": "standards_coding_standards"
+    },
+    {
+      "label": "Documentation Standards",
+      "file_type": "document",
+      "source_file": "standards/DOCUMENTATION_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 12,
+      "norm_label": "documentation standards",
+      "community_name": "Git & Docs",
+      "id": "standards_documentation_standards"
+    },
+    {
+      "label": "Git Standards",
+      "file_type": "document",
+      "source_file": "standards/GIT_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 12,
+      "norm_label": "git standards",
+      "community_name": "Git & Docs",
+      "id": "standards_git_standards"
+    },
+    {
+      "label": "Naming Conventions",
+      "file_type": "document",
+      "source_file": "standards/NAMING_CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "naming conventions",
+      "community_name": "Standards",
+      "id": "standards_naming_conventions"
+    },
+    {
+      "label": "Standards README",
+      "file_type": "document",
+      "source_file": "standards/README.md",
+      "community": 0,
+      "norm_label": "standards readme",
+      "community_name": "Standards",
+      "id": "standards_README"
+    },
+    {
+      "label": "KingC Software Standards",
+      "file_type": "document",
+      "source_file": "standards/STANDARDS.md",
+      "community": 0,
+      "norm_label": "kingc software standards",
+      "community_name": "Standards",
+      "id": "standards_STANDARDS"
+    },
+    {
+      "label": "Coding Standards",
+      "file_type": "document",
+      "source_file": "standards/CODING_STANDARDS.md",
+      "community": 0,
+      "norm_label": "coding standards",
+      "community_name": "Standards",
+      "id": "standards_CODING_STANDARDS"
+    },
+    {
+      "label": "Documentation Standards",
+      "file_type": "document",
+      "source_file": "standards/DOCUMENTATION_STANDARDS.md",
+      "community": 0,
+      "norm_label": "documentation standards",
+      "community_name": "Standards",
+      "id": "standards_DOCUMENTATION_STANDARDS"
+    },
+    {
+      "label": "Git Standards",
+      "file_type": "document",
+      "source_file": "standards/GIT_STANDARDS.md",
+      "community": 0,
+      "norm_label": "git standards",
+      "community_name": "Standards",
+      "id": "standards_GIT_STANDARDS"
+    },
+    {
+      "label": "Graphify Standards",
+      "file_type": "document",
+      "source_file": "standards/GRAPHIFY_STANDARDS.md",
+      "community": 0,
+      "norm_label": "graphify standards",
+      "community_name": "Standards",
+      "id": "standards_GRAPHIFY_STANDARDS"
+    },
+    {
+      "label": "Versioning Standards",
+      "file_type": "document",
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "community": 0,
+      "norm_label": "versioning standards",
+      "community_name": "Standards",
+      "id": "standards_VERSIONING_STANDARDS"
+    },
+    {
+      "label": "Versioning Standards",
+      "file_type": "document",
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 8,
+      "norm_label": "versioning standards",
+      "community_name": "Versioning",
+      "id": "standards_versioning_standards"
+    },
+    {
+      "label": "Atomic Task System",
+      "file_type": "document",
+      "source_file": "tasks/ATOMIC_TASKS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 8,
+      "norm_label": "atomic task system",
+      "community_name": "Versioning",
+      "id": "tasks_atomic_tasks"
+    },
+    {
+      "label": "Tasks README",
+      "file_type": "document",
+      "source_file": "tasks/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 8,
+      "norm_label": "tasks readme",
+      "community_name": "Versioning",
+      "id": "tasks_readme"
+    }
+  ],
+  "links": [
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_Workstation.md",
+      "source": "repositories_ai_workstation",
+      "target": "repositories_omniforces"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/OmniForces.md",
+      "source": "repositories_omniforces",
+      "target": "repositories_blackball"
+    },
+    {
+      "relation": "provides",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_Knowledge.md",
+      "source": "repositories_ai_knowledge",
+      "target": "repositories_blackball"
+    },
+    {
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_Knowledge.md",
+      "source": "repositories_ai_knowledge",
+      "target": "repositories_ai_workstation"
+    },
+    {
+      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
+      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
+      "confidence_score": 1.0,
+      "source_file": "GLOBAL_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_knowledge",
+      "target": "standards_document_header"
+    },
+    {
+      "relation": "supports|consumes",
+      "confidence": "EXTRACTED",
+      "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ai_workstation",
+      "target": "omniforces"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "source_file": "employees/FORGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_auth_session",
+      "target": "employees_ai_supervisor"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "employees/AI_SUPERVISOR.md",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_auth_supervisor",
+      "target": "src_auth_session"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_context_builder_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_graphify_context_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_knowledge_provider_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_repository_context_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_context_builder_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_graphify_context_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_knowledge_provider_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_repository_context_py"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026_08_20_40pm_md",
+      "target": "architecture_development_lifecycle_md"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "session_handover_2026_08_20_40pm_md",
+      "target": "employees_ai_employees_md"
+    },
+    {
+      "source_file": "employees/AI_EMPLOYEES.md#kc_001_forge",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "ai_employee_kc_001_md",
+      "target": "architecture_development_lifecycle_md"
+    },
+    {
+      "source_file": "employees/AI_EMPLOYEES.md#kc_002_continue",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "ai_employee_kc_002_md",
+      "target": "architecture_development_lifecycle_md"
+    },
+    {
+      "source_file": "src/agent_manager.py",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "src_agent_manager_py",
+      "target": "src_graphify_py"
+    },
+    {
+      "source_file": "src/agent_manager.py",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "src_agent_manager_py",
+      "target": "src_knowledge_provider_py"
+    },
+    {
+      "source_file": "src/agent_manager.py",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "src_agent_manager_py",
+      "target": "src_memory_manager_py"
+    },
+    {
+      "source_file": "src/agent_manager.py",
+      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "source": "src_agent_manager_py",
+      "target": "src_obsidian_context_py"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "employees/AI_EMPLOYEE_RULES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "employees_ai_employee_rules_md",
+      "target": "ai_knowledge_employees_ai_employee_rules_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "employees/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "employees_readme_md",
+      "target": "ai_knowledge_employees_readme_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_workstation_md",
+      "target": "ai_knowledge_repositories_ai_workstation_md"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AI_Knowledge/employees/AI_EMPLOYEE_RULES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ai_knowledge_employees_ai_employee_rules_md",
+      "target": "ai_knowledge_ai_workstation_history"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/README.md",
+      "source": "repositories_readme",
+      "target": "standards_ai_workflow_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/README.md",
+      "source": "repositories_readme",
+      "target": "standards_coding_standards"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/DOCUMENTATION_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_documentation_standards",
+      "target": "standards_git_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_STANDARDS",
+      "target": "standards_naming_conventions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source": "standards_README",
+      "target": "standards_STANDARDS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_STANDARDS",
+      "target": "standards_CODING_STANDARDS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_STANDARDS",
+      "target": "standards_DOCUMENTATION_STANDARDS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_STANDARDS",
+      "target": "standards_GIT_STANDARDS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_STANDARDS",
+      "target": "standards_GRAPHIFY_STANDARDS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source": "standards_STANDARDS",
+      "target": "standards_VERSIONING_STANDARDS"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_versioning_standards",
+      "target": "tasks_atomic_tasks"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_versioning_standards",
+      "target": "tasks_readme"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/ATOMIC_TASKS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tasks_atomic_tasks",
+      "target": "tasks_readme"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "participate_in_employees",
+      "label": "Human Readable Label",
+      "nodes": [
+        "src_auth_session",
+        "employees_ai_supervisor"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.75,
+      "source_file": "employees/FORGE.md"
+    },
+    {
+      "id": "engineering_ecosystem",
+      "label": "Engineering Ecosystem",
+      "nodes": [
+        "repositories_ai_knowledge",
+        "repositories_ai_workstation",
+        "repositories_omniforces",
+        "repositories_blackball"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "repositories"
+    },
+    {
+      "id": "conceptually_related_to",
+      "label": "",
+      "nodes": [
+        "src_auth_session"
+      ],
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "source_file": "tasks/TASK_TEMPLATE.md",
+      "source_location": null
+    }
+  ],
+  "built_at_commit": "5c1ac9ebfb323baac92afe750636fe8ea8c8bae9"
+}

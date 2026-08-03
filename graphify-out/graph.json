@@ -4,425 +4,666 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "participate_in",
-        "label": "Human Readable Label",
-        "nodes": [
-          "src_auth_session",
-          "src_auth_forge",
-          "src_auth_continue",
-          "src_auth_supervisor"
-        ],
-        "relation": "participate_in",
+        "id": "architecture_documents",
+        "label": "Architecture Documents",
+        "relation": "contains",
         "confidence": "EXTRACTED",
-        "source_file": "employees/AI_EMPLOYEES.md",
+        "confidence_score": 1.0,
+        "source_file": null,
         "source_location": null,
-        "weight": 1.0
+        "nodes": [
+          "ecosystem_overview_md",
+          "architecture_development_lifecycle_md"
+        ]
       },
       {
-        "id": "participate_in_employees",
-        "label": "Human Readable Label",
-        "nodes": [
-          "src_auth_session",
-          "employees_ai_supervisor"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 0.75,
-        "source_file": "employees/FORGE.md"
-      },
-      {
-        "id": "engineering_ecosystem",
-        "label": "Engineering Ecosystem",
-        "nodes": [
-          "repositories_ai_knowledge",
-          "repositories_ai_workstation",
-          "repositories_omniforces",
-          "repositories_blackball"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.75,
-        "source_file": "repositories"
-      },
-      {
-        "id": "kces_principles_group",
-        "label": "Engineering Principles (KCES) Group",
-        "nodes": [
-          "standards_standards_document",
-          "kces_principles"
-        ],
-        "relation": "participate_in",
+        "id": "architecture_systems",
+        "label": "Architecture Systems",
+        "relation": "contains",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "standards/STANDARDS.md"
+        "source_file": null,
+        "source_location": null,
+        "nodes": [
+          "ai_knowledge",
+          "ai_workstation",
+          "omni_forces",
+          "black_ball"
+        ]
       },
       {
-        "id": "repository_standards_group",
-        "label": "Repository Standards Group",
-        "nodes": [
-          "standards_standards_document",
-          "repository_standards"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "standards/STANDARDS.md"
-      },
-      {
-        "id": "documentation_standards_group",
-        "label": "Documentation Standards Group",
-        "nodes": [
-          "standards_standards_document",
-          "documentation_standards"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "standards/STANDARDS.md"
-      },
-      {
-        "id": "git_standards_group",
-        "label": "Git Standards Group",
-        "nodes": [
-          "standards_standards_document",
-          "git_standards"
-        ],
-        "relation": "conceptually_related_to",
-        "confidence": "INFERRED",
-        "confidence_score": 0.75,
-        "source_file": "standards/STANDARDS.md"
-      },
-      {
-        "id": "conceptually_related_to",
-        "label": "",
-        "nodes": [
-          "src_auth_session"
-        ],
+        "id": "architecture_documents_relationships",
+        "label": "Architecture Documents Relationships",
         "relation": "conceptually_related_to",
         "confidence": "EXTRACTED",
-        "source_file": "tasks/TASK_TEMPLATE.md",
-        "source_location": null
+        "confidence_score": 1.0,
+        "source_file": null,
+        "source_location": null,
+        "nodes": [
+          "ecosystem_overview_md",
+          "architecture_development_lifecycle_md"
+        ]
+      },
+      {
+        "id": "architecture_systems_relationships",
+        "label": "Architecture Systems Relationships",
+        "relation": "conceptually_related_to",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": null,
+        "source_location": null,
+        "nodes": [
+          "ai_knowledge",
+          "ai_workstation",
+          "omni_forces",
+          "black_ball"
+        ]
+      },
+      {
+        "id": "ai_workforce_structure",
+        "label": "AI Workforce Structure",
+        "relation": "part_of",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "nodes": [
+          "employees_ai_supervisor",
+          "employees_continue",
+          "employees_forge"
+        ]
+      },
+      {
+        "id": "knowledge_flow",
+        "label": "Knowledge Flow",
+        "nodes": [
+          "repositories_ai_knowledge_repository",
+          "repositories_ai_workstation_repository",
+          "repositories_blackball_repository"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.75,
+        "source_file": "repositories/AI_WORKSTATION.md"
       }
     ]
   },
   "nodes": [
     {
-      "label": "OmniForces",
+      "label": "Global Knowledge",
       "file_type": "document",
-      "source_file": "repositories/OmniForces.md",
-      "source_location": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": "KingC Software",
+      "source_file": "GLOBAL_KNOWLEDGE.md",
+      "id": "global_knowledge_md",
+      "community": 14,
+      "norm_label": "global knowledge"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "readme_md",
+      "community": 14,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Session Handover 2026-08-01",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "id": "session_handover_2026-08-01",
       "community": 2,
-      "norm_label": "omniforces",
-      "id": "repositories_omniforces"
+      "norm_label": "session handover 2026-08-01"
     },
     {
-      "label": "BlackBall",
+      "label": "Session Handover 2026-08-02",
       "file_type": "document",
-      "source_file": "repositories/BlackBall.md",
-      "source_location": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": "KingC Software",
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "id": "session_handover_2026-08-02",
       "community": 2,
-      "norm_label": "blackball",
-      "id": "repositories_blackball"
+      "norm_label": "session handover 2026-08-02"
     },
     {
-      "label": "AI Knowledge",
-      "file_type": "document",
-      "source_file": "repositories/AI_Knowledge.md",
-      "source_location": null,
-      "captured_at": null,
-      "author": "KingC Software",
-      "contributor": null,
+      "label": "Graphify Context Integration",
+      "file_type": "code",
+      "source_file": "app/context/graphify_context.py",
+      "id": "app_context_graphify_context_py",
       "community": 2,
-      "norm_label": "ai knowledge",
-      "id": "repositories_ai_knowledge"
+      "norm_label": "graphify context integration"
     },
     {
-      "label": "Human Readable Name",
-      "file_type": "document",
-      "source_file": "STANDARDS.md",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
+      "label": "Repository Context",
+      "file_type": "code",
+      "source_file": "app/context/repository_context.py",
+      "id": "app_context_repository_context_py",
       "community": 2,
-      "norm_label": "human readable name",
-      "community_name": "Human Readable Name",
-      "id": "standards_document_header"
+      "norm_label": "repository context"
     },
     {
-      "label": "AI Workstation",
-      "file_type": "document",
-      "source_file": "repositories/AI_Workstation.md",
-      "source_location": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": "KingC Software",
+      "label": "Knowledge Provider",
+      "file_type": "code",
+      "source_file": "app/context/knowledge_provider.py",
+      "id": "app_context_knowledge_provider_py",
       "community": 2,
-      "norm_label": "ai workstation",
-      "id": "repositories_ai_workstation"
+      "norm_label": "knowledge provider"
     },
     {
-      "label": "KingC Engineering Standard",
+      "label": "Context Builder",
+      "file_type": "code",
+      "source_file": "app/context/context_builder.py",
+      "id": "app_context_context_builder_py",
+      "community": 2,
+      "norm_label": "context builder"
+    },
+    {
+      "label": "Project Status",
       "file_type": "document",
-      "source_file": "standards/STANDARDS.md",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
       "source_location": null,
-      "captured_at": null,
-      "author": "KingC Software",
-      "contributor": null,
-      "community": 3,
-      "norm_label": "kingc engineering standard",
-      "id": "standards_standards_document"
-    },
-    {
-      "label": "Engineering Principles (KCES)",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
-      "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "norm_label": "engineering principles (kces)",
-      "id": "kces_principles"
+      "id": "session_handover_2026_08_20_40pm_project_status",
+      "community": 9,
+      "norm_label": "project status"
     },
     {
-      "label": "Repository Standards",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
-      "source_location": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "repository standards",
-      "id": "repository_standards"
-    },
-    {
-      "label": "Documentation Standards",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
-      "source_location": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 3,
-      "norm_label": "documentation standards",
-      "id": "documentation_standards"
-    },
-    {
-      "label": "Standard Document Header",
+      "label": "Current Test Status",
       "file_type": "document",
-      "source_file": "standards/STANDARDS.md",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
       "source_location": null,
-      "captured_at": null,
-      "author": "KingC Software",
-      "contributor": null,
-      "community": 0,
-      "norm_label": "standard document header",
-      "id": "standard_document_header"
-    },
-    {
-      "label": "Naming Standards",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
-      "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "naming standards",
-      "id": "naming_standards"
+      "id": "session_handover_2026_08_20_40pm_current_test_status",
+      "community": 10,
+      "norm_label": "current test status"
     },
     {
-      "label": "Folder Standards",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
+      "label": "Major Architectural Work Completed",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
       "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "folder standards",
-      "id": "folder_standards"
+      "id": "session_handover_2026_08_20_40pm_major_architectural_work_completed",
+      "community": 7,
+      "norm_label": "major architectural work completed"
     },
     {
-      "label": "Graphify Standards",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
+      "label": "Current Architecture",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
       "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "graphify standards",
-      "id": "graphify_standards"
+      "id": "session_handover_2026_08_20_40pm_current_architecture",
+      "community": 6,
+      "norm_label": "current architecture"
     },
     {
-      "label": "Git Standards",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
+      "label": "Recommended Next Phase",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
       "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "git standards",
-      "id": "git_standards"
+      "id": "session_handover_2026_08_20_40pm_recommended_next_phase",
+      "community": 11,
+      "norm_label": "recommended next phase"
     },
     {
-      "label": "AI Employee Rules",
-      "file_type": "rationale",
-      "source_file": "standards/STANDARDS.md",
+      "label": "Development Practices Established",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
       "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "ai employee rules",
-      "id": "ai_employee_rules"
+      "id": "session_handover_2026_08_20_40pm_development_practices_established",
+      "community": 13,
+      "norm_label": "development practices established"
+    },
+    {
+      "label": "Important Repository Behaviour",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "session_handover_2026_08_20_40pm_important_repository_behaviour",
+      "community": 12,
+      "norm_label": "important repository behaviour"
+    },
+    {
+      "label": "Coding Style",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "session_handover_2026_08_20_40pm_coding_style",
+      "community": 7,
+      "norm_label": "coding style"
+    },
+    {
+      "label": "Current Stability",
+      "file_type": "document",
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "session_handover_2026_08_20_40pm_current_stability",
+      "community": 6,
+      "norm_label": "current stability"
+    },
+    {
+      "label": "Development Philosophy",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_development_philosophy",
+      "community": 9,
+      "norm_label": "development philosophy"
+    },
+    {
+      "label": "Lifecycle Overview",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_lifecycle_overview",
+      "community": 17,
+      "norm_label": "lifecycle overview"
+    },
+    {
+      "label": "Phase 1 \u2014 Understand",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_1_understand",
+      "community": 6,
+      "norm_label": "phase 1 \u2014 understand"
+    },
+    {
+      "label": "Phase 2 \u2014 Plan",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_2_plan",
+      "community": 18,
+      "norm_label": "phase 2 \u2014 plan"
+    },
+    {
+      "label": "Phase 3 \u2014 Build",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_3_build",
+      "community": 7,
+      "norm_label": "phase 3 \u2014 build"
+    },
+    {
+      "label": "Phase 4 \u2014 Test",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_4_test",
+      "community": 10,
+      "norm_label": "phase 4 \u2014 test"
+    },
+    {
+      "label": "Phase 5 \u2014 Document",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_5_document",
+      "community": 11,
+      "norm_label": "phase 5 \u2014 document"
+    },
+    {
+      "label": "Phase 6 \u2014 Commit",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_6_commit",
+      "community": 12,
+      "norm_label": "phase 6 \u2014 commit"
+    },
+    {
+      "label": "Phase 7 \u2014 Verify",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_7_verify",
+      "community": 13,
+      "norm_label": "phase 7 \u2014 verify"
+    },
+    {
+      "label": "Phase 8 \u2014 Complete",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_phase_8_complete",
+      "community": 19,
+      "norm_label": "phase 8 \u2014 complete"
+    },
+    {
+      "label": "AI Employee Workflow",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_ai_employee_workflow",
+      "community": 15,
+      "norm_label": "ai employee workflow"
+    },
+    {
+      "label": "Repository Application",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_repository_application",
+      "community": 20,
+      "norm_label": "repository application"
+    },
+    {
+      "label": "Continuous Improvement",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_continuous_improvement",
+      "community": 16,
+      "norm_label": "continuous improvement"
+    },
+    {
+      "label": "Source of Truth",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_development_lifecycle_source_of_truth",
+      "community": 22,
+      "norm_label": "source of truth"
     },
     {
       "label": "Revision History",
-      "file_type": "concept",
-      "source_file": "standards/STANDARDS.md",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
       "source_location": null,
+      "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "revision history",
-      "id": "revision_history"
+      "id": "architecture_development_lifecycle_revision_history",
+      "community": 21,
+      "norm_label": "revision history"
     },
     {
-      "label": "AI Knowledge Repository",
-      "file_type": "concept",
-      "source_file": "ai_knowledge",
+      "label": "Ecosystem Architecture",
+      "file_type": "document",
+      "source_file": "architecture/ECOSYSTEM_ARCHITECTURE.md",
+      "source_location": null,
+      "source_url": null,
       "captured_at": null,
-      "author": "KingC Software",
-      "id": "ai_knowledge_repository",
-      "community": 4,
-      "norm_label": "ai knowledge repository"
+      "author": null,
+      "contributor": null,
+      "id": "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "community": 1,
+      "norm_label": "ecosystem architecture"
     },
     {
-      "label": "OmniForces",
-      "file_type": "concept",
-      "source_file": "omniforces",
+      "label": "Knowledge Integration Architecture",
+      "file_type": "document",
+      "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
+      "source_location": null,
+      "source_url": null,
       "captured_at": null,
-      "author": "KingC Software",
-      "id": "omniforces",
-      "community": 4,
-      "norm_label": "omniforces"
+      "author": null,
+      "contributor": null,
+      "id": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "community": 1,
+      "norm_label": "knowledge integration architecture"
     },
     {
-      "label": "AI Workstation",
-      "file_type": "concept",
-      "source_file": "ai_workstation",
-      "captured_at": null,
-      "author": "KingC Software",
-      "id": "ai_workstation",
-      "community": 4,
-      "norm_label": "ai workstation"
-    },
-    {
-      "label": "BlackBall",
-      "file_type": "concept",
-      "source_file": "blackball",
-      "captured_at": null,
-      "author": "KingC Software",
-      "id": "blackball",
-      "community": 6,
-      "norm_label": "blackball"
-    },
-    {
-      "label": "AI Knowledge",
-      "file_type": "concept",
+      "label": "Architecture README",
+      "file_type": "document",
       "source_file": "architecture/README.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "ai_knowledge",
-      "community": 5,
-      "norm_label": "ai knowledge"
+      "id": "architecture_README_md",
+      "community": 4,
+      "norm_label": "architecture readme"
     },
     {
-      "label": "Future Repositories",
-      "file_type": "concept",
+      "label": "System Overview",
+      "file_type": "document",
       "source_file": "architecture/SYSTEM_OVERVIEW.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "future_repositories",
-      "community": 7,
-      "norm_label": "future repositories"
+      "id": "ecosystem_overview_md",
+      "community": 4,
+      "norm_label": "system overview"
     },
     {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "employees/FORGE.md",
+      "label": "Development Lifecycle",
+      "file_type": "document",
+      "source_file": "architecture/DEVELOPMENT_LIFECYCLE.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "verification": "unverified",
-      "id": "src_auth_session",
-      "community": 1,
-      "norm_label": "human readable name"
+      "id": "architecture_development_lifecycle_md",
+      "community": 4,
+      "norm_label": "development lifecycle"
     },
     {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "employees/CONTINUE.md",
+      "label": "Repositories README",
+      "file_type": "document",
+      "source_file": "architecture/repositories/README.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "verification": "unverified",
-      "id": "src_auth_continue",
-      "community": 1,
-      "norm_label": "human readable name"
+      "id": "architecture_repositories_readme_md",
+      "community": 24,
+      "norm_label": "repositories readme"
     },
     {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "employees/AI_EMPLOYEES.md",
+      "label": "Employees README",
+      "file_type": "document",
+      "source_file": "architecture/employees/README.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "verification": "unverified",
-      "id": "src_auth_forge",
-      "community": 1,
-      "norm_label": "human readable name"
+      "id": "architecture_employees_readme_md",
+      "community": 23,
+      "norm_label": "employees readme"
     },
     {
-      "label": "Human Readable Name",
-      "file_type": "code",
-      "source_file": "employees/AI_SUPERVISOR.md",
+      "label": "Tasks README",
+      "file_type": "document",
+      "source_file": "architecture/tasks/README.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "verification": "unverified",
-      "id": "src_auth_supervisor",
-      "community": 1,
-      "norm_label": "human readable name"
+      "id": "architecture_tasks_readme_md",
+      "community": 5,
+      "norm_label": "tasks readme"
     },
     {
-      "label": "Human Readable Name",
+      "label": "Standards README",
+      "file_type": "document",
+      "source_file": "architecture/standards/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_standards_readme_md",
+      "community": 25,
+      "norm_label": "standards readme"
+    },
+    {
+      "label": "AI Knowledge",
+      "file_type": "document",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_knowledge",
+      "community": 1,
+      "norm_label": "ai knowledge"
+    },
+    {
+      "label": "AI_Workstation",
       "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ai_workstation",
+      "community": 1,
+      "norm_label": "ai_workstation"
+    },
+    {
+      "label": "OmniForces",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "omni_forces",
+      "community": 1,
+      "norm_label": "omniforces"
+    },
+    {
+      "label": "BlackBall",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "black_ball",
+      "community": 1,
+      "norm_label": "blackball"
+    },
+    {
+      "label": "Graphify",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "graphify",
+      "community": 1,
+      "norm_label": "graphify"
+    },
+    {
+      "label": "AI Employees",
+      "file_type": "document",
+      "source_file": "employees/AI_EMPLOYEES.md",
+      "id": "employees_ai_employees",
+      "community": 4,
+      "norm_label": "ai employees"
+    },
+    {
+      "label": "AI Employee Rules",
+      "file_type": "document",
+      "source_file": "employees/AI_EMPLOYEE_RULES.md",
+      "id": "employees_ai_employee_rules",
+      "community": 4,
+      "norm_label": "ai employee rules"
+    },
+    {
+      "label": "AI Supervisor",
+      "file_type": "document",
       "source_file": "employees/AI_SUPERVISOR.md",
       "source_location": null,
       "source_url": null,
@@ -431,308 +672,1007 @@
       "contributor": null,
       "id": "employees_ai_supervisor",
       "community": 1,
-      "norm_label": "human readable name"
+      "norm_label": "ai supervisor"
+    },
+    {
+      "label": "Continue",
+      "file_type": "document",
+      "source_file": "employees/CONTINUE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "employees_continue",
+      "community": 1,
+      "norm_label": "continue"
+    },
+    {
+      "label": "Forge",
+      "file_type": "document",
+      "source_file": "employees/FORGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "employees_forge",
+      "community": 1,
+      "norm_label": "forge"
+    },
+    {
+      "label": "Employees README",
+      "file_type": "document",
+      "source_file": "employees/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "employees_readme",
+      "community": 26,
+      "norm_label": "employees readme"
+    },
+    {
+      "label": "AI_KNOWLEDGE.md",
+      "file_type": "document",
+      "source_file": "repositories/AI_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_ai_knowledge_md",
+      "community": 3,
+      "norm_label": "ai_knowledge.md"
+    },
+    {
+      "label": "AI_WORKSTATION.md",
+      "file_type": "document",
+      "source_file": "repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_ai_workstation_md",
+      "community": 3,
+      "norm_label": "ai_workstation.md"
+    },
+    {
+      "label": "BLACKBALL.md",
+      "file_type": "document",
+      "source_file": "repositories/BLACKBALL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_blackball_md",
+      "community": 3,
+      "norm_label": "blackball.md"
+    },
+    {
+      "label": "AI_Knowledge Repository",
+      "file_type": "concept",
+      "source_file": "repositories/AI_KNOWLEDGE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_ai_knowledge_repository",
+      "community": 3,
+      "norm_label": "ai_knowledge repository"
+    },
+    {
+      "label": "AI_Workstation Repository",
+      "file_type": "concept",
+      "source_file": "repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_ai_workstation_repository",
+      "community": 3,
+      "norm_label": "ai_workstation repository"
+    },
+    {
+      "label": "BlackBall Repository",
+      "file_type": "concept",
+      "source_file": "repositories/BLACKBALL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_blackball_repository",
+      "community": 3,
+      "norm_label": "blackball repository"
+    },
+    {
+      "label": "OmniForces Repository Documentation",
+      "file_type": "document",
+      "source_file": "repositories/OMNIFORCES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_omniforces_md",
+      "community": 0,
+      "norm_label": "omniforces repository documentation"
+    },
+    {
+      "label": "Repositories README",
+      "file_type": "document",
+      "source_file": "repositories/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_readme_md",
+      "community": 0,
+      "norm_label": "repositories readme"
+    },
+    {
+      "label": "Repositories Overview",
+      "file_type": "document",
+      "source_file": "repositories/REPOSITORIES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repositories_repositories_md",
+      "community": 0,
+      "norm_label": "repositories overview"
+    },
+    {
+      "label": "Coding Standards",
+      "file_type": "document",
+      "source_file": "standards/CODING_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_coding_standards",
+      "community": 0,
+      "norm_label": "coding standards"
+    },
+    {
+      "label": "Documentation Standards",
+      "file_type": "document",
+      "source_file": "standards/DOCUMENTATION_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_documentation_standards",
+      "community": 0,
+      "norm_label": "documentation standards"
+    },
+    {
+      "label": "Git Standards",
+      "file_type": "document",
+      "source_file": "standards/GIT_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_git_standards",
+      "community": 0,
+      "norm_label": "git standards"
+    },
+    {
+      "label": "Naming Conventions",
+      "file_type": "document",
+      "source_file": "standards/NAMING_CONVENTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_naming_conventions",
+      "community": 0,
+      "norm_label": "naming conventions"
+    },
+    {
+      "label": "README",
+      "file_type": "document",
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_readme",
+      "community": 0,
+      "norm_label": "readme"
+    },
+    {
+      "label": "AI Workflow Standards",
+      "file_type": "document",
+      "source_file": "standards/AI_WORKFLOW_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_ai_workflow_standards",
+      "community": 0,
+      "norm_label": "ai workflow standards"
+    },
+    {
+      "label": "Graphify Standards",
+      "file_type": "document",
+      "source_file": "standards/GRAPHIFY_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_graphify_standards",
+      "community": 0,
+      "norm_label": "graphify standards"
+    },
+    {
+      "label": "Versioning Standards",
+      "file_type": "document",
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_versioning_standards",
+      "community": 0,
+      "norm_label": "versioning standards"
+    },
+    {
+      "label": "KingC Software Standards",
+      "file_type": "document",
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_STANDARDS",
+      "community": 8,
+      "norm_label": "kingc software standards"
+    },
+    {
+      "label": "Versioning Standards",
+      "file_type": "document",
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "standards_VERSIONING_STANDARDS",
+      "community": 8,
+      "norm_label": "versioning standards"
+    },
+    {
+      "label": "ATOMIC_TASKS.md",
+      "file_type": "document",
+      "source_file": "tasks/ATOMIC_TASKS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tasks_ATOMIC_TASKS",
+      "community": 8,
+      "norm_label": "atomic_tasks.md"
+    },
+    {
+      "label": "Task Lifecycle",
+      "file_type": "document",
+      "source_file": "tasks/TASK_LIFECYCLE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tasks_TASK_LIFECYCLE_md",
+      "community": 5,
+      "norm_label": "task lifecycle"
+    },
+    {
+      "label": "Task States",
+      "file_type": "document",
+      "source_file": "tasks/TASK_STATES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tasks_TASK_STATES_md",
+      "community": 5,
+      "norm_label": "task states"
+    },
+    {
+      "label": "Task Template",
+      "file_type": "document",
+      "source_file": "tasks/TASK_TEMPLATE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tasks_TASK_TEMPLATE_md",
+      "community": 5,
+      "norm_label": "task template"
     }
   ],
   "links": [
     {
-      "relation": "depends_on",
+      "relation": "cites",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "repositories/AI_Workstation.md",
-      "source": "repositories_ai_workstation",
-      "target": "repositories_omniforces"
-    },
-    {
-      "relation": "depends_on",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "repositories/OmniForces.md",
-      "source": "repositories_omniforces",
-      "target": "repositories_blackball"
-    },
-    {
-      "relation": "provides",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "repositories/AI_Knowledge.md",
-      "source": "repositories_ai_knowledge",
-      "target": "repositories_blackball"
-    },
-    {
-      "relation": "depends_on",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "repositories/AI_Knowledge.md",
-      "source": "repositories_ai_knowledge",
-      "target": "repositories_ai_workstation"
-    },
-    {
-      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
       "confidence_score": 1.0,
       "source_file": "GLOBAL_KNOWLEDGE.md",
+      "source": "global_knowledge_md",
+      "target": "readme_md"
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_context_builder_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_graphify_context_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_knowledge_provider_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-01.md",
+      "source": "session_handover_2026-08-01",
+      "target": "app_context_repository_context_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_context_builder_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_graphify_context_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_knowledge_provider_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026-08-02.md",
+      "source": "session_handover_2026-08-02",
+      "target": "app_context_repository_context_py",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_project_status",
+      "target": "architecture_development_lifecycle_development_philosophy",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_current_test_status",
+      "target": "architecture_development_lifecycle_phase_4_test",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_major_architectural_work_completed",
+      "target": "architecture_development_lifecycle_phase_3_build",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_current_architecture",
+      "target": "architecture_development_lifecycle_phase_1_understand",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_recommended_next_phase",
+      "target": "architecture_development_lifecycle_phase_5_document",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_development_practices_established",
+      "target": "architecture_development_lifecycle_phase_7_verify",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_important_repository_behaviour",
+      "target": "architecture_development_lifecycle_phase_6_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_coding_style",
+      "target": "architecture_development_lifecycle_phase_3_build",
+      "confidence_score": 1.0
+    },
+    {
+      "source_file": "SESSION_HANDOVER_2026_08_20-40pm.md",
+      "source": "session_handover_2026_08_20_40pm_current_stability",
+      "target": "architecture_development_lifecycle_phase_1_understand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/ECOSYSTEM_ARCHITECTURE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "repositories_ai_knowledge",
-      "target": "standards_document_header"
-    },
-    {
-      "relation": "applies_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standards_standards_document",
-      "target": "documentation_standards"
+      "source": "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "target": "ai_knowledge"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standards_standards_document",
-      "target": "kces_principles"
-    },
-    {
-      "relation": "applies_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standards_standards_document",
-      "target": "repository_standards"
+      "source_file": "architecture/ECOSYSTEM_ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "target": "ai_workstation"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standard_document_header",
-      "target": "folder_standards"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standard_document_header",
-      "target": "git_standards"
-    },
-    {
-      "relation": "applies_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standard_document_header",
-      "target": "graphify_standards"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "standards/STANDARDS.md",
-      "source": "standard_document_header",
-      "target": "naming_standards"
+      "source_file": "architecture/ECOSYSTEM_ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "target": "black_ball"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "naming_standards",
-      "target": "ai_employee_rules"
+      "source_file": "architecture/ECOSYSTEM_ARCHITECTURE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "target": "omni_forces"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "standards/STANDARDS.md",
-      "source": "folder_standards",
-      "target": "ai_employee_rules"
-    },
-    {
-      "relation": "applies_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md",
-      "source": "graphify_standards",
-      "target": "revision_history"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "standards/STANDARDS.md",
-      "source": "git_standards",
-      "target": "revision_history"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "source_file": "ai_workstation",
-      "source": "ai_workstation",
-      "target": "ai_knowledge_repository",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "source_file": "omniforces",
-      "source": "omniforces",
-      "target": "ai_knowledge_repository",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "supports|consumes",
-      "confidence": "EXTRACTED",
       "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "ai_workstation",
-      "target": "omniforces",
-      "confidence_score": 1.0
+      "source": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "target": "ai_knowledge"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
-      "source_file": "employees/FORGE.md",
+      "confidence_score": 1.0,
+      "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "src_auth_session",
-      "target": "employees_ai_supervisor",
-      "confidence_score": 1.0
+      "source": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "target": "ai_workstation"
     },
     {
-      "relation": "calls",
+      "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
-      "source_file": "employees/AI_EMPLOYEES.md",
+      "confidence_score": 1.0,
+      "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "src_auth_session",
-      "target": "src_auth_forge",
-      "confidence_score": 1.0
+      "source": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "target": "black_ball"
     },
     {
-      "relation": "implements",
+      "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "target": "graphify"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/KNOWLEDGE_INTEGRATION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "target": "omni_forces"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_README_md",
+      "target": "architecture_development_lifecycle_md"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_README_md",
+      "target": "ecosystem_overview_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/SYSTEM_OVERVIEW.md",
+      "source": "ecosystem_overview_md",
+      "target": "employees_ai_employee_rules"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "architecture/SYSTEM_OVERVIEW.md",
+      "source": "ecosystem_overview_md",
+      "target": "employees_ai_employees"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_tasks_readme_md",
+      "target": "tasks_TASK_LIFECYCLE_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_tasks_readme_md",
+      "target": "tasks_TASK_STATES_md"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_tasks_readme_md",
+      "target": "tasks_TASK_TEMPLATE_md"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "employees/AI_SUPERVISOR.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "src_auth_supervisor",
-      "target": "src_auth_session",
-      "confidence_score": 1.0
+      "source": "employees_ai_supervisor",
+      "target": "ai_knowledge"
     },
     {
-      "relation": "conceptually_related_to",
+      "relation": "shares_data_with",
       "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "employees/CONTINUE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "src_auth_continue",
-      "target": "src_auth_forge",
-      "confidence_score": 0.5
+      "source": "employees_continue",
+      "target": "ai_knowledge"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "employees/FORGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "employees_forge",
+      "target": "ai_knowledge"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "employees/AI_SUPERVISOR.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "employees_ai_supervisor",
+      "target": "employees_continue"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "employees/AI_SUPERVISOR.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "employees_ai_supervisor",
+      "target": "employees_forge"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "employees/CONTINUE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "employees_continue",
+      "target": "employees_forge"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_knowledge_md",
+      "target": "repositories_ai_knowledge_repository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_workstation_md",
+      "target": "repositories_ai_workstation_repository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/BLACKBALL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_blackball_md",
+      "target": "repositories_blackball_repository"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_knowledge_repository",
+      "target": "repositories_ai_workstation_repository"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_KNOWLEDGE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_knowledge_repository",
+      "target": "repositories_blackball_repository"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/AI_WORKSTATION.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_ai_workstation_repository",
+      "target": "repositories_blackball_repository"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/OMNIFORCES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_omniforces_md",
+      "target": "standards_ai_workflow_standards"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_readme_md",
+      "target": "standards_ai_workflow_standards"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "repositories/REPOSITORIES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "repositories_repositories_md",
+      "target": "standards_ai_workflow_standards"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/CODING_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_coding_standards",
+      "target": "standards_documentation_standards"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/CODING_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_coding_standards",
+      "target": "standards_git_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_coding_standards"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/DOCUMENTATION_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_documentation_standards",
+      "target": "standards_git_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_documentation_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_git_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_naming_conventions"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_ai_workflow_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_graphify_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_readme",
+      "target": "standards_versioning_standards"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_STANDARDS",
+      "target": "standards_VERSIONING_STANDARDS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_STANDARDS",
+      "target": "tasks_ATOMIC_TASKS"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "standards/VERSIONING_STANDARDS.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "standards_VERSIONING_STANDARDS",
+      "target": "tasks_ATOMIC_TASKS"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/TASK_LIFECYCLE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tasks_TASK_LIFECYCLE_md",
+      "target": "tasks_TASK_STATES_md"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/TASK_LIFECYCLE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tasks_TASK_LIFECYCLE_md",
+      "target": "tasks_TASK_TEMPLATE_md"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tasks/TASK_STATES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tasks_TASK_STATES_md",
+      "target": "tasks_TASK_TEMPLATE_md"
     }
   ],
   "hyperedges": [
     {
-      "id": "participate_in",
-      "label": "Human Readable Label",
-      "nodes": [
-        "src_auth_session",
-        "src_auth_forge",
-        "src_auth_continue",
-        "src_auth_supervisor"
-      ],
-      "relation": "participate_in",
+      "id": "architecture_documents",
+      "label": "Architecture Documents",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "employees/AI_EMPLOYEES.md",
+      "confidence_score": 1.0,
+      "source_file": null,
       "source_location": null,
-      "weight": 1.0
+      "nodes": [
+        "ecosystem_overview_md",
+        "architecture_development_lifecycle_md"
+      ]
     },
     {
-      "id": "participate_in_employees",
-      "label": "Human Readable Label",
-      "nodes": [
-        "src_auth_session",
-        "employees_ai_supervisor"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 0.75,
-      "source_file": "employees/FORGE.md"
-    },
-    {
-      "id": "engineering_ecosystem",
-      "label": "Engineering Ecosystem",
-      "nodes": [
-        "repositories_ai_knowledge",
-        "repositories_ai_workstation",
-        "repositories_omniforces",
-        "repositories_blackball"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "repositories"
-    },
-    {
-      "id": "kces_principles_group",
-      "label": "Engineering Principles (KCES) Group",
-      "nodes": [
-        "standards_standards_document",
-        "kces_principles"
-      ],
-      "relation": "participate_in",
+      "id": "architecture_systems",
+      "label": "Architecture Systems",
+      "relation": "contains",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md"
+      "source_file": null,
+      "source_location": null,
+      "nodes": [
+        "ai_knowledge",
+        "ai_workstation",
+        "omni_forces",
+        "black_ball"
+      ]
     },
     {
-      "id": "repository_standards_group",
-      "label": "Repository Standards Group",
-      "nodes": [
-        "standards_standards_document",
-        "repository_standards"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md"
-    },
-    {
-      "id": "documentation_standards_group",
-      "label": "Documentation Standards Group",
-      "nodes": [
-        "standards_standards_document",
-        "documentation_standards"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "standards/STANDARDS.md"
-    },
-    {
-      "id": "git_standards_group",
-      "label": "Git Standards Group",
-      "nodes": [
-        "standards_standards_document",
-        "git_standards"
-      ],
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "standards/STANDARDS.md"
-    },
-    {
-      "id": "conceptually_related_to",
-      "label": "",
-      "nodes": [
-        "src_auth_session"
-      ],
+      "id": "architecture_documents_relationships",
+      "label": "Architecture Documents Relationships",
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
-      "source_file": "tasks/TASK_TEMPLATE.md",
-      "source_location": null
+      "confidence_score": 1.0,
+      "source_file": null,
+      "source_location": null,
+      "nodes": [
+        "ecosystem_overview_md",
+        "architecture_development_lifecycle_md"
+      ]
+    },
+    {
+      "id": "architecture_systems_relationships",
+      "label": "Architecture Systems Relationships",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": null,
+      "source_location": null,
+      "nodes": [
+        "ai_knowledge",
+        "ai_workstation",
+        "omni_forces",
+        "black_ball"
+      ]
+    },
+    {
+      "id": "ai_workforce_structure",
+      "label": "AI Workforce Structure",
+      "relation": "part_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "nodes": [
+        "employees_ai_supervisor",
+        "employees_continue",
+        "employees_forge"
+      ]
+    },
+    {
+      "id": "knowledge_flow",
+      "label": "Knowledge Flow",
+      "nodes": [
+        "repositories_ai_knowledge_repository",
+        "repositories_ai_workstation_repository",
+        "repositories_blackball_repository"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.75,
+      "source_file": "repositories/AI_WORKSTATION.md"
     }
   ],
-  "built_at_commit": "c6d712011d4ae5d41815ab812a6f0b0be154fbe1"
+  "built_at_commit": "5c1ac9ebfb323baac92afe750636fe8ea8c8bae9"
 }

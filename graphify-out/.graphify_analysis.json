@@ -1,170 +1,275 @@
 {
   "communities": {
     "0": [
-      "ai_employee_rules",
-      "folder_standards",
-      "git_standards",
-      "graphify_standards",
-      "naming_standards",
-      "revision_history",
-      "standard_document_header"
+      "repositories_omniforces_md",
+      "repositories_readme_md",
+      "repositories_repositories_md",
+      "standards_ai_workflow_standards",
+      "standards_coding_standards",
+      "standards_documentation_standards",
+      "standards_git_standards",
+      "standards_graphify_standards",
+      "standards_naming_conventions",
+      "standards_readme",
+      "standards_versioning_standards"
     ],
     "1": [
+      "ai_knowledge",
+      "ai_workstation",
+      "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "architecture_KNOWLEDGE_INTEGRATION_md",
+      "black_ball",
       "employees_ai_supervisor",
-      "src_auth_continue",
-      "src_auth_forge",
-      "src_auth_session",
-      "src_auth_supervisor"
+      "employees_continue",
+      "employees_forge",
+      "graphify",
+      "omni_forces"
     ],
     "2": [
-      "repositories_ai_knowledge",
-      "repositories_ai_workstation",
-      "repositories_blackball",
-      "repositories_omniforces",
-      "standards_document_header"
+      "app_context_context_builder_py",
+      "app_context_graphify_context_py",
+      "app_context_knowledge_provider_py",
+      "app_context_repository_context_py",
+      "session_handover_2026-08-01",
+      "session_handover_2026-08-02"
     ],
     "3": [
-      "documentation_standards",
-      "kces_principles",
-      "repository_standards",
-      "standards_standards_document"
+      "repositories_ai_knowledge_md",
+      "repositories_ai_knowledge_repository",
+      "repositories_ai_workstation_md",
+      "repositories_ai_workstation_repository",
+      "repositories_blackball_md",
+      "repositories_blackball_repository"
     ],
     "4": [
-      "ai_knowledge_repository",
-      "ai_workstation",
-      "omniforces"
+      "architecture_README_md",
+      "architecture_development_lifecycle_md",
+      "ecosystem_overview_md",
+      "employees_ai_employee_rules",
+      "employees_ai_employees"
     ],
     "5": [
-      "ai_knowledge"
+      "architecture_tasks_readme_md",
+      "tasks_TASK_LIFECYCLE_md",
+      "tasks_TASK_STATES_md",
+      "tasks_TASK_TEMPLATE_md"
     ],
     "6": [
-      "blackball"
+      "architecture_development_lifecycle_phase_1_understand",
+      "session_handover_2026_08_20_40pm_current_architecture",
+      "session_handover_2026_08_20_40pm_current_stability"
     ],
     "7": [
-      "future_repositories"
+      "architecture_development_lifecycle_phase_3_build",
+      "session_handover_2026_08_20_40pm_coding_style",
+      "session_handover_2026_08_20_40pm_major_architectural_work_completed"
+    ],
+    "8": [
+      "standards_STANDARDS",
+      "standards_VERSIONING_STANDARDS",
+      "tasks_ATOMIC_TASKS"
+    ],
+    "9": [
+      "architecture_development_lifecycle_development_philosophy",
+      "session_handover_2026_08_20_40pm_project_status"
+    ],
+    "10": [
+      "architecture_development_lifecycle_phase_4_test",
+      "session_handover_2026_08_20_40pm_current_test_status"
+    ],
+    "11": [
+      "architecture_development_lifecycle_phase_5_document",
+      "session_handover_2026_08_20_40pm_recommended_next_phase"
+    ],
+    "12": [
+      "architecture_development_lifecycle_phase_6_commit",
+      "session_handover_2026_08_20_40pm_important_repository_behaviour"
+    ],
+    "13": [
+      "architecture_development_lifecycle_phase_7_verify",
+      "session_handover_2026_08_20_40pm_development_practices_established"
+    ],
+    "14": [
+      "global_knowledge_md",
+      "readme_md"
+    ],
+    "15": [
+      "architecture_development_lifecycle_ai_employee_workflow"
+    ],
+    "16": [
+      "architecture_development_lifecycle_continuous_improvement"
+    ],
+    "17": [
+      "architecture_development_lifecycle_lifecycle_overview"
+    ],
+    "18": [
+      "architecture_development_lifecycle_phase_2_plan"
+    ],
+    "19": [
+      "architecture_development_lifecycle_phase_8_complete"
+    ],
+    "20": [
+      "architecture_development_lifecycle_repository_application"
+    ],
+    "21": [
+      "architecture_development_lifecycle_revision_history"
+    ],
+    "22": [
+      "architecture_development_lifecycle_source_of_truth"
+    ],
+    "23": [
+      "architecture_employees_readme_md"
+    ],
+    "24": [
+      "architecture_repositories_readme_md"
+    ],
+    "25": [
+      "architecture_standards_readme_md"
+    ],
+    "26": [
+      "employees_readme"
     ]
   },
   "cohesion": {
-    "0": 0.38095238095238093,
-    "1": 0.4,
-    "2": 0.5,
-    "3": 0.5,
-    "4": 1.0,
+    "0": 0.23636363636363636,
+    "1": 0.3333333333333333,
+    "2": 0.5333333333333333,
+    "3": 0.4,
+    "4": 0.4,
     "5": 1.0,
-    "6": 1.0,
-    "7": 1.0
+    "6": 0.6666666666666666,
+    "7": 0.6666666666666666,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0
   },
   "gods": [
     {
-      "id": "standard_document_header",
-      "label": "Standard Document Header",
+      "id": "standards_readme",
+      "label": "README",
+      "degree": 7
+    },
+    {
+      "id": "architecture_KNOWLEDGE_INTEGRATION_md",
+      "label": "Knowledge Integration Architecture",
+      "degree": 5
+    },
+    {
+      "id": "session_handover_2026-08-01",
+      "label": "Session Handover 2026-08-01",
       "degree": 4
     },
     {
-      "id": "repositories_ai_knowledge",
-      "label": "AI Knowledge",
+      "id": "session_handover_2026-08-02",
+      "label": "Session Handover 2026-08-02",
+      "degree": 4
+    },
+    {
+      "id": "architecture_ECO_SYSTEM_ARCHITECTURE_md",
+      "label": "Ecosystem Architecture",
+      "degree": 4
+    },
+    {
+      "id": "standards_ai_workflow_standards",
+      "label": "AI Workflow Standards",
+      "degree": 4
+    },
+    {
+      "id": "ecosystem_overview_md",
+      "label": "System Overview",
       "degree": 3
     },
     {
-      "id": "standards_standards_document",
-      "label": "KingC Engineering Standard",
+      "id": "architecture_tasks_readme_md",
+      "label": "Tasks README",
       "degree": 3
     },
     {
-      "id": "src_auth_session",
-      "label": "Human Readable Name",
+      "id": "employees_ai_supervisor",
+      "label": "AI Supervisor",
       "degree": 3
     },
     {
-      "id": "repositories_omniforces",
-      "label": "OmniForces",
-      "degree": 2
-    },
-    {
-      "id": "repositories_blackball",
-      "label": "BlackBall",
-      "degree": 2
-    },
-    {
-      "id": "repositories_ai_workstation",
-      "label": "AI Workstation",
-      "degree": 2
-    },
-    {
-      "id": "naming_standards",
-      "label": "Naming Standards",
-      "degree": 2
-    },
-    {
-      "id": "folder_standards",
-      "label": "Folder Standards",
-      "degree": 2
-    },
-    {
-      "id": "graphify_standards",
-      "label": "Graphify Standards",
-      "degree": 2
+      "id": "employees_continue",
+      "label": "Continue",
+      "degree": 3
     }
   ],
   "surprises": [
     {
-      "source": "AI Knowledge",
-      "target": "Human Readable Name",
+      "source": "Session Handover 2026-08-01",
+      "target": "Context Builder",
       "source_files": [
-        "repositories/AI_Knowledge.md",
-        "STANDARDS.md"
-      ],
-      "confidence": "EXTRACTED|INFERRED|AMBIGUOUS",
-      "relation": "references|cites|conceptually_related_to|shares_data_with|semantically_similar_to",
-      "why": "connects across different repos/directories"
-    },
-    {
-      "source": "Human Readable Name",
-      "target": "Human Readable Name",
-      "source_files": [
-        "employees/CONTINUE.md",
-        "employees/AI_EMPLOYEES.md"
-      ],
-      "confidence": "INFERRED",
-      "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source"
-    },
-    {
-      "source": "AI Workstation",
-      "target": "OmniForces",
-      "source_files": [
-        "repositories/AI_Workstation.md",
-        "repositories/OmniForces.md"
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/context_builder.py"
       ],
       "confidence": "EXTRACTED",
-      "relation": "depends_on",
-      "why": "cross-file semantic connection"
+      "relation": "",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
     },
     {
-      "source": "OmniForces",
-      "target": "BlackBall",
+      "source": "Session Handover 2026-08-01",
+      "target": "Graphify Context Integration",
       "source_files": [
-        "repositories/OmniForces.md",
-        "repositories/BlackBall.md"
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/graphify_context.py"
       ],
       "confidence": "EXTRACTED",
-      "relation": "depends_on",
-      "why": "cross-file semantic connection"
+      "relation": "",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
     },
     {
-      "source": "AI Knowledge",
-      "target": "BlackBall",
+      "source": "Session Handover 2026-08-01",
+      "target": "Knowledge Provider",
       "source_files": [
-        "repositories/AI_Knowledge.md",
-        "repositories/BlackBall.md"
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/knowledge_provider.py"
       ],
       "confidence": "EXTRACTED",
-      "relation": "provides",
-      "why": "cross-file semantic connection"
+      "relation": "",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Handover 2026-08-01",
+      "target": "Repository Context",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/repository_context.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Handover 2026-08-02",
+      "target": "Context Builder",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-02.md",
+        "app/context/context_builder.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "",
+      "why": "crosses file types (doc \u2194 code); connects across different repos/directories"
     }
   ],
   "tokens": {
-    "input": 11703,
-    "output": 2347
+    "input": 36216,
+    "output": 13508
   }
 }

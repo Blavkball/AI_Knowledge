@@ -1,0 +1,285 @@
+{
+  "communities": {
+    "0": [
+      "standards_CODING_STANDARDS",
+      "standards_DOCUMENTATION_STANDARDS",
+      "standards_GIT_STANDARDS",
+      "standards_GRAPHIFY_STANDARDS",
+      "standards_README",
+      "standards_STANDARDS",
+      "standards_VERSIONING_STANDARDS",
+      "standards_naming_conventions"
+    ],
+    "1": [
+      "app_context_context_builder_py",
+      "app_context_graphify_context_py",
+      "app_context_knowledge_provider_py",
+      "app_context_repository_context_py",
+      "session_handover_2026-08-01",
+      "session_handover_2026-08-02"
+    ],
+    "2": [
+      "ai_employee_kc_001_md",
+      "ai_employee_kc_002_md",
+      "architecture_development_lifecycle_md",
+      "employees_ai_employees_md",
+      "session_handover_2026_08_20_40pm_md"
+    ],
+    "3": [
+      "repositories_ai_knowledge",
+      "repositories_ai_workstation",
+      "repositories_blackball",
+      "repositories_omniforces",
+      "standards_document_header"
+    ],
+    "4": [
+      "src_agent_manager_py",
+      "src_graphify_py",
+      "src_knowledge_provider_py",
+      "src_memory_manager_py",
+      "src_obsidian_context_py"
+    ],
+    "5": [
+      "ai_knowledge_ai_workstation_history",
+      "ai_knowledge_employees_ai_employee_rules_md",
+      "employees_ai_employee_rules_md"
+    ],
+    "6": [
+      "employees_ai_supervisor",
+      "src_auth_session",
+      "src_auth_supervisor"
+    ],
+    "7": [
+      "repositories_readme",
+      "standards_ai_workflow_standards",
+      "standards_coding_standards"
+    ],
+    "8": [
+      "standards_versioning_standards",
+      "tasks_atomic_tasks",
+      "tasks_readme"
+    ],
+    "9": [
+      "ai_knowledge_employees_readme_md",
+      "employees_readme_md"
+    ],
+    "10": [
+      "ai_knowledge_repositories_ai_workstation_md",
+      "repositories_ai_workstation_md"
+    ],
+    "11": [
+      "ai_workstation",
+      "omniforces"
+    ],
+    "12": [
+      "standards_documentation_standards",
+      "standards_git_standards"
+    ],
+    "13": [
+      "ai_employee_definitions_document"
+    ],
+    "14": [
+      "ai_knowledge"
+    ],
+    "15": [
+      "ai_workstation_repository"
+    ],
+    "16": [
+      "atomic_task_methodology_document"
+    ],
+    "17": [
+      "black_ball_repository"
+    ],
+    "18": [
+      "blackball"
+    ],
+    "19": [
+      "engineering_standards_document"
+    ],
+    "20": [
+      "future_repositories"
+    ],
+    "21": [
+      "global_architecture_document"
+    ],
+    "22": [
+      "global_graphify_knowledge_graph_document"
+    ],
+    "23": [
+      "omni_forces_repository"
+    ],
+    "24": [
+      "readme_ai_knowledge"
+    ],
+    "25": [
+      "repository_relationships_document"
+    ],
+    "26": [
+      "shared_documentation_document"
+    ],
+    "27": [
+      "src_auth_continue"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25,
+    "1": 0.5333333333333333,
+    "2": 0.4,
+    "3": 0.5,
+    "4": 0.4,
+    "5": 0.6666666666666666,
+    "6": 0.6666666666666666,
+    "7": 0.6666666666666666,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0
+  },
+  "gods": [
+    {
+      "id": "standards_STANDARDS",
+      "label": "KingC Software Standards",
+      "degree": 7
+    },
+    {
+      "id": "session_handover_2026-08-01",
+      "label": "Session Handover 2026-08-01",
+      "degree": 4
+    },
+    {
+      "id": "session_handover_2026-08-02",
+      "label": "Session Handover 2026-08-02",
+      "degree": 4
+    },
+    {
+      "id": "src_agent_manager_py",
+      "label": "AgentManager",
+      "degree": 4
+    },
+    {
+      "id": "repositories_ai_knowledge",
+      "label": "AI Knowledge",
+      "degree": 3
+    },
+    {
+      "id": "architecture_development_lifecycle_md",
+      "label": "Development Lifecycle",
+      "degree": 3
+    },
+    {
+      "id": "repositories_omniforces",
+      "label": "OmniForces",
+      "degree": 2
+    },
+    {
+      "id": "repositories_blackball",
+      "label": "BlackBall",
+      "degree": 2
+    },
+    {
+      "id": "repositories_ai_workstation",
+      "label": "AI Workstation",
+      "degree": 2
+    },
+    {
+      "id": "src_auth_session",
+      "label": "Human Readable Name",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Session Handover 2026-08-01",
+      "target": "Context Builder",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/context_builder.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Handover 2026-08-01",
+      "target": "Graphify Context Integration",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/graphify_context.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Handover 2026-08-01",
+      "target": "Knowledge Provider",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/knowledge_provider.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Handover 2026-08-01",
+      "target": "Repository Context",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-01.md",
+        "app/context/repository_context.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Handover 2026-08-02",
+      "target": "Context Builder",
+      "source_files": [
+        "SESSION_HANDOVER_2026-08-02.md",
+        "app/context/context_builder.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ code); connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 4 inferred relationships involving `Session Handover 2026-08-01` (e.g. with `Context Builder` and `Graphify Context Integration`) actually correct?",
+      "why": "`Session Handover 2026-08-01` has 4 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 4 inferred relationships involving `Session Handover 2026-08-02` (e.g. with `Context Builder` and `Graphify Context Integration`) actually correct?",
+      "why": "`Session Handover 2026-08-02` has 4 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 4 inferred relationships involving `AgentManager` (e.g. with `Graphify` and `KnowledgeProvider`) actually correct?",
+      "why": "`AgentManager` has 4 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Human Readable Name`, `AI Knowledge`, `Future Repositories` to the rest of the system?",
+      "why": "41 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
