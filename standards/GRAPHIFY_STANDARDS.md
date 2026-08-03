@@ -57,7 +57,7 @@ The standard extraction process uses:
 ```powershell
 graphify extract . `
     --backend ollama `
-    --model llama3.2:latest `
+    --model qwen2.5-coder:7b `
     --global `
     --as AI_Knowledge `
     --token-budget 12000 `
