@@ -59,8 +59,8 @@ graphify extract . `
     --backend ollama `
     --model qwen2.5-coder:7b `
     --global `
-    --token-budget 6000 `
-    --api-timeout 900 `
+    --token-budget 4096 `
+    --api-timeout 1355 `
     --max-concurrency 1
 ```
 
